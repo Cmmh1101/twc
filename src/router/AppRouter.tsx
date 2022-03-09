@@ -9,6 +9,7 @@ const AppRouter = () => {
       <Switch>
         <Route path="/" component={HomePage} exact />
 
+        {/* all new routes should be added above */}
         <Route component={NotFoundPage} />
         <Redirect to="/" />
       </Switch>
