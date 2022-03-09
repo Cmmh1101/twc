@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --overlay: #f0ffffe8;
+  --dark-color: #1b1b1b;
+  --white: #f5f5f6;
+  --blue: #3b79ec;
+  --dark-blue: #033c73;
+  --light-blue: #2fa4e7;
+  --transition: all 0.3s ease-in-out;
+}
