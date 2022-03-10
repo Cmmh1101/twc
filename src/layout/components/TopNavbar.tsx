@@ -5,6 +5,6 @@ const TopNavbar = ({ props }: any) => {
 
   // const toggle = () => setIsOpen(!isOpen);
 
-  return <div>Navbar trying to merge</div>;
+  return <div>Navbar</div>;
 };
 export default TopNavbar;
