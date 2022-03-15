@@ -2,14 +2,15 @@ import { Jumbotron, Container } from "reactstrap";
 
 const Hero = () => {
     return (
-        <div>
-        <Jumbotron fluid>
+        <>
+        <Jumbotron className="title" fluid>
           <Container fluid>
-            <h1 className="display-3">Fluid jumbotron</h1>
-            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 className="display-3"> teachers.who.code </h1>
+            <p className="lead"> Helping teachers succeed in and out of the classroom using tech.</p>
           </Container>
         </Jumbotron>
-      </div>
+        
+      </>
     );
 }
 
