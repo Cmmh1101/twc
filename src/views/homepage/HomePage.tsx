@@ -1,10 +1,10 @@
 import React from "react";
-import MainHeader from "../../utils/MainHeader";
+import Hero from "./components/Hero";
 
 const HomePage = () => {
   return (
     <>
-      <MainHeader headerText="Homepage" />
+      <Hero />
     </>
   );
 };
