@@ -29,16 +29,16 @@ class TopNavbar extends Component<any, any> {
   render() {
     return (
       <div>
-        <Navbar fixed='top' dark expand="md">
+        <Navbar className="navbar" dark expand="md">
           <NavbarBrand href="/">t.w.c logo</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <NavItem className="px-3">
                 <NavLink href="/components/">Home</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown">
-                <DropdownToggle nav onHover>
+                <DropdownToggle nav onHover className="px-3">
                   Path
                 </DropdownToggle>
                 <DropdownMenu>
@@ -51,7 +51,7 @@ class TopNavbar extends Component<any, any> {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar className="dropdown">
-                <DropdownToggle nav onHover>
+                <DropdownToggle nav onHover className="px-3">
                   Resources
                 </DropdownToggle>
                 <DropdownMenu>
@@ -63,13 +63,13 @@ class TopNavbar extends Component<any, any> {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
+              <NavItem className="px-3">
                 <NavLink href="https://github.com/reactstrap/reactstrap">Blog</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="px-3">
                 <NavLink href="https://github.com/reactstrap/reactstrap">FAQ</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="px-3">
                 <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
               </NavItem>
             </Nav>
