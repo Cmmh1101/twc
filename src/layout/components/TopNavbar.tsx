@@ -30,7 +30,7 @@ class TopNavbar extends Component<any, any> {
     return (
       <div>
         <Navbar className="navbar" dark expand="md">
-          <NavbarBrand href="/">t.w.c logo</NavbarBrand>
+          <NavbarBrand className="mr-auto" href="/"><img src="/twcLogo.png" height="100" width="100" alt="Teachers Who Code logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
