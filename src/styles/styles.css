@@ -1,3 +1,5 @@
+/*This is the Hero element with the typing animation*/
+
 .title {
     background-color: black !important;
     color: azure;
@@ -22,6 +24,7 @@
     color: azure;
     
 }
+/*Typing animation starts here*/
 .display-3::before,
 .display-3::after {
     content: '';
@@ -56,6 +59,19 @@
                 blink 1s steps(18) infinite;
 
 }
+/*End of typing animation and Hero element*/
+
+/*Beginning of Meet the Team section*/
+
+.MeetTheTeam{
+    font-family: "Source Code Pro", monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .teamCard {
     background-color:rgb(206, 226, 245) !important;
     font-family: "Source Code Pro", monospace;
@@ -72,20 +88,21 @@
 }
 
 .cardBody {
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px!important; /*not working*/
 }
 
 .pict {
     height: 200px;
     width: 200px;
-    /*padding: 5rem;
-    border: 5px;
-    border-color: ;
-    border-radius: 100px 100px 100px 100px;*/
+    padding: 5rem;
+    border: solid 5px;
+    border-color: rgb(11, 6, 40);
+    /*border-image: linear-gradient(135deg, rgb(18, 10, 65), rgb(206, 226, 245)) 1; When I use this, it becomes a square*/
+    border-radius: 0 275px 250px 275px !important; /*I created different shapes here, thisis my favorite so far. Let me know what ou think please*/
 }
 
 .BtnTeam {
-    background-color: rgb(12, 1, 77);
+    background-color: rgb(11, 6, 40) !important;
 }
 
 /*link to google fonts: <style>

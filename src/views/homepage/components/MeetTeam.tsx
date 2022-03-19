@@ -6,6 +6,7 @@ import {
 const MeetTeam = () => {
     return (
         <>
+        <h1 className = "MeetTheTeam">Meet the Team</h1>
             <CardDeck>
 
                 <Card className="teamCard">
