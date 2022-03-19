@@ -56,26 +56,38 @@
                 blink 1s steps(18) infinite;
 
 }
-/*It's not connecting to the homepage file*/
-.Card {
+.teamCard {
     background-color:rgb(206, 226, 245) !important;
     font-family: "Source Code Pro", monospace;
+    border-radius: 0 25px 0 25px;
+}
+.teamMember {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.CardBody {
-    border-radius: 20px;
+.jobTitle {
+    font-size: 1.5rem;
+    
+}
 
+.cardBody {
+    border-radius: 20px;
 }
 
 .pict {
     height: 200px;
     width: 200px;
-    border-radius: 200px;
+    /*padding: 5rem;
+    border: 5px;
+    border-color: ;
+    border-radius: 100px 100px 100px 100px;*/
 }
 
-.button {
-
+.BtnTeam {
+    background-color: rgb(12, 1, 77);
 }
+
 /*link to google fonts: <style>
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&family=Monoton&family=Oswald:wght@200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
 </style>*/
