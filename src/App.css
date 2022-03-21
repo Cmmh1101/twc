@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", Verdana, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 :root {
@@ -12,4 +14,13 @@
   --dark-blue: #033c73;
   --light-blue: #2fa4e7;
   --transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
 }
