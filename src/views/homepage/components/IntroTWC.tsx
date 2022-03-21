@@ -12,7 +12,7 @@ const IntroTWC = (props: Props) => {
           <MainHeader headerText="What is Teachers Who Code" />
           <Col
             xs={12}
-            className="d-flex align-items-center justify-content-center flex-wrap"
+            className="d-flex align-items-center justify-content-center flex-wrap mb-5"
           >
             <Col xs={12} md={6} className="px-0">
               <div className="intro-img">
