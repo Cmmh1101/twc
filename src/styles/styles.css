@@ -16,7 +16,7 @@ hr.solid {
 .title {
   background-color: black !important;
   color: azure;
-  font-family: "Source Code Pro", monospace;
+  /* font-family: "Source Code Pro", monospace; */
   font-size: 1rem;
   padding-left: 10rem;
   position: relative;

@@ -22,14 +22,17 @@ const IntroTWC = (props: Props) => {
                 />
               </div>
             </Col>
-            <Col xs={12} md={6} className="mt-4 mt-md-0 mx-0">
-              <p className="mb-0">
+            <Col xs={12} md={6} className="mt-4 mt-md-0 mx-0 px-5">
+              <p className="">
                 We’re here to pay it forward. To help pave a road for those who
                 come after us. To let those who are on the fence about making a
-                career change know it is possible. To let that teacher, who has
-                no tech experience, know that you are valuable, your experience
-                matters, you have transferable skills and you can learn a new
-                trade. We’re here to let you know “Si se puede”.
+                career change know it is possible.
+              </p>
+              <p>
+                To let that teacher, who has no tech experience, know that you
+                are valuable, your experience matters, you have transferable
+                skills and you can learn a new trade. We’re here to let you know
+                “Si se puede”.
               </p>
             </Col>
           </Col>

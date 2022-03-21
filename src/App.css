@@ -24,3 +24,13 @@ h5,
 h6 {
   color: var(--dark-color);
 }
+
+/* .title {
+  background-color: black !important;
+  color: azure;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  padding-left: 10rem;
+  position: relative;
+  text-align: center;
+} */
