@@ -7,7 +7,7 @@ interface Props {}
 const IntroTWC = (props: Props) => {
   return (
     <>
-      <Container className="mb-5">
+      <Container className="mb-5" id="twc-intro">
         <Row>
           <MainHeader headerText="What is Teachers Who Code" />
           <Col
