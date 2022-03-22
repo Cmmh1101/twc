@@ -15,7 +15,7 @@ const MeetTeam = () => {
                         <CardTitle className="teamMember">Clara Harmonson</CardTitle>
                         <CardSubtitle className="jobTitle">Card subtitle</CardSubtitle>
                         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                        <Button className="BtnTeam">Contact Clara</Button>
+                        <Button className="BtnTeam">Read Clara's story</Button>
                     </CardBody >
                 </Card>
                 <Card className="teamCard">
@@ -24,7 +24,7 @@ const MeetTeam = () => {
                         <CardTitle className="teamMember">Marilyn Marquez</CardTitle>
                         <CardSubtitle className="jobTitle">Card subtitle</CardSubtitle>
                         <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                        <Button className="BtnTeam">Contact Marilyn</Button>
+                        <Button className="BtnTeam">Read Marilyn's story</Button>
                     </CardBody>
                 </Card>
                 <Card className="teamCard">
@@ -33,7 +33,7 @@ const MeetTeam = () => {
                         <CardTitle className="teamMember">Carla Montano</CardTitle>
                         <CardSubtitle className="jobTitle">Web Developer</CardSubtitle>
                         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                        <Button className="BtnTeam">Contact Carla</Button>
+                        <Button className="BtnTeam">Read Carla's story</Button>
                     </CardBody>
                 </Card>
                 <Card className="teamCard">
@@ -42,7 +42,7 @@ const MeetTeam = () => {
                         <CardTitle className="teamMember">Allie Pistolessi</CardTitle>
                         <CardSubtitle className="jobTitle">Web Developer</CardSubtitle>
                         <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                        <Button className="BtnTeam">Contact Allison</Button>
+                        <Button className="BtnTeam">Read Allie's story</Button>
                     </CardBody>
                 </Card>
                 <Card className="teamCard">
@@ -51,7 +51,7 @@ const MeetTeam = () => {
                         <CardTitle className="teamMember">Michael Rivera</CardTitle>
                         <CardSubtitle className="jobTitle">Web Developer</CardSubtitle>
                         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                        <Button className="BtnTeam">Contact Michael</Button>
+                        <Button className="BtnTeam">Read Michael's story</Button>
                     </CardBody >
                 </Card>
             </CardDeck>

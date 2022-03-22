@@ -92,17 +92,17 @@
 }
 
 .pict {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     padding: 5rem;
-    border: solid 5px;
-    border-color: rgb(11, 6, 40);
+    border: solid 2px;
+    border-color: #3B59F9;
     /*border-image: linear-gradient(135deg, rgb(18, 10, 65), rgb(206, 226, 245)) 1; When I use this, it becomes a square*/
-    border-radius: 0 275px 250px 275px !important; /*I created different shapes here, thisis my favorite so far. Let me know what ou think please*/
+    border-radius: 175px 0 175px 0 !important; /*I created different shapes here, this is my favorite so far. Let me know what you think please*/
 }
 
 .BtnTeam {
-    background-color: rgb(11, 6, 40) !important;
+    background-color: #3B59F9 !important;
 }
 
 /*link to google fonts: <style>
