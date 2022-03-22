@@ -30,7 +30,7 @@ class TopNavbar extends Component<any, any> {
     return (
       <div>
         <Navbar className="navbar" dark expand="md">
-          <NavbarBrand className="mr-auto" href="/"><img src="/twcLogo.png" height="100" width="100" alt="Teachers Who Code logo" /></NavbarBrand>
+          <NavbarBrand className="mr-auto" href="/"><img src="/twcLogo2.jpeg" className="navbar-image" height="100" width="100" alt="Teachers Who Code logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -38,7 +38,7 @@ class TopNavbar extends Component<any, any> {
                 <NavLink href="/components/">Home</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar className="dropdown">
-                <DropdownToggle nav onHover className="px-3">
+                <DropdownToggle nav className="px-3">
                   Path
                 </DropdownToggle>
                 <DropdownMenu>
@@ -51,7 +51,7 @@ class TopNavbar extends Component<any, any> {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar className="dropdown">
-                <DropdownToggle nav onHover className="px-3">
+                <DropdownToggle nav className="px-3">
                   Resources
                 </DropdownToggle>
                 <DropdownMenu>
