@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import MainHeader from "../../../utils/MainHeader";
 
