@@ -163,52 +163,29 @@ hr.solid {
 
 /*navbar*/
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 .navbar {
-    background-color: black;
-    color: #FFFBFB;
+  background-color: black;
+  color: #fffbfb;
 }
-
 
 /*Resources*/
 
-
-.resources-box{
-    background-color: black;
-    color: #FFFBFB; 
-    height: 70vh;
+.resources-box {
+  background-color: black;
+  color: #fffbfb;
+  height: auto;
+}
+.resources-box .intro-img {
+  max-height: 300px;
+}
+.resources-box .intro-img img {
+  max-height: 300px;
 }
 
-.resources-title{
-    padding-top: 35px;
-    padding-left: 15vw;
+.resources-button {
+  background: linear-gradient(178.23deg, #3b59f9 1.5%, #a9b7ff 128.18%);
+  border-radius: 30px;
 }
-
-.resources-text-left{
-    margin-left: 10vw;
-}
-.resources-text-right{
-    margin-right: 10vw;
-
-}
-.image-standin{
-    background-color: #3B59F9;
-    border: 1px solid #3B59F9;
-    height: 250px;
-}
-
-.resources-button{
-    background: linear-gradient(178.23deg, #3B59F9 1.5%, #A9B7FF 128.18%);
-    border-radius: 30px;    
-}
-
-hr.new1 {
-    border: 1px solid #3B59F9;
-    margin-right: 10vw;
-    margin-left: 10vw;
-    margin-top: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
