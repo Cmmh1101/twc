@@ -21,7 +21,6 @@ hr.solid {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 5rem;
 }
 
 .display-3 {
@@ -188,4 +187,19 @@ hr.solid {
 .resources-button {
   background: linear-gradient(178.23deg, #3b59f9 1.5%, #a9b7ff 128.18%);
   border-radius: 30px;
+}
+
+/* responsive styles */
+
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 2.2rem;
+  }
+  .title p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .hero-arrow img {
+    width: 50px;
+  }
 }
