@@ -160,3 +160,17 @@ hr.solid {
   width: 100%;
   height: 100%;
 }
+
+/*navbar*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar {
+    background-color: black;
+    color: #FFFBFB;
+}
+
+.navbar-image{
+    background-color: black;
+}
