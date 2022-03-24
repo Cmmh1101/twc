@@ -4,9 +4,7 @@ import AppRouter from "../router/AppRouter";
 import Footer from "./components/Footer";
 import TopNavbar from "./components/TopNavbar";
 
-interface Props {}
-
-const Layout = (props: Props) => {
+const Layout = () => {
   return (
     <>
       <TopNavbar />

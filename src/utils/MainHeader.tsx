@@ -17,8 +17,7 @@ const MainHeader = ({
   return (
     <Col className={`main-header mx-auto py-5 ${customClass}`}>
       <h2 className={customClass}>{headerText}</h2>
-      <span className="subtitle-deco">{subTitleDeco}</span>
-      <p>{subText}</p>
+      <hr className="solid" />
     </Col>
   );
 };
