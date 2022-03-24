@@ -3,15 +3,15 @@
 hr.solid {
   border: 0;
   height: 5px;
-  background: #3b59f9;
+  background: var(--blue);
   background: linear-gradient(165deg, #3b59f9 0%, #a9b7ff 68%);
 }
 
 /* hero */
 
 .title {
-  background-color: black !important;
-  color: azure;
+  background-color: var(--dark-color) !important;
+  color: #f0ffff;
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
   padding-left: 10rem;
@@ -41,7 +41,7 @@ hr.solid {
 }
 
 .display-3::before {
-  background: black;
+  background: var(--dark-color);
 }
 
 @keyframes typewriter {
@@ -52,13 +52,13 @@ hr.solid {
 
 @keyframes blink {
   to {
-    background: black;
+    background: var(--dark-color);
   }
 }
 
 .display-3::after {
   width: 0.3rem;
-  background: white;
+  background: var(--white);
   animation: typewriter 5s steps(18) 1s forwards, blink 1s steps(18) infinite;
 }
 
@@ -166,15 +166,15 @@ hr.solid {
 }
 
 .navbar {
-  background-color: black;
-  color: #fffbfb;
+  background-color: var(--dark-color);
+  color: var(--white);
 }
 
 /*Resources*/
 
 .resources-box {
-  background-color: black;
-  color: #fffbfb;
+  background-color: var(--dark-color);
+  color: var(--white);
   height: auto;
 }
 .resources-box .intro-img {
