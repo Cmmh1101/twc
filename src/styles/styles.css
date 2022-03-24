@@ -242,8 +242,8 @@ hr.solid {
     padding: 5rem;
     border: solid 2px;
     border-color: #3B59F9;
-    /*border-image: linear-gradient(135deg, rgb(18, 10, 65), rgb(206, 226, 245)) 1; When I use this, it becomes a square*/
-    border-radius: 175px 0 175px 0 !important; /*I created different shapes here, this is my favorite so far. Let me know what you think please*/
+    border-image: linear-gradient(135deg, rgb(18, 10, 65), rgb(206, 226, 245)) 1; /*When I use this, it becomes a square*/
+    /*border-radius: 50% !important; I created different shapes here, this is my favorite so far. Let me know what you think please*/
 }
 
 .BtnTeam {
