@@ -208,46 +208,41 @@ hr.solid {
 
 /*Beginning of Meet the Team section*/
 
-.MeetTheTeam{
-    font-family: "Source Code Pro", monospace;
-    font-size: 5rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.MeetTheTeam {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.teamCard {
-    background-color:rgb(206, 226, 245) !important;
-    font-family: "Source Code Pro", monospace;
-    border-radius: 0 25px 0 25px;
+.team-card {
+  border-radius: 0 25px 0 25px;
 }
-.teamMember {
-    font-size: 2rem;
-    font-weight: bold;
+.team-member {
+  font-size: 1.5rem;
+  
 }
 
-.jobTitle {
-    font-size: 1.5rem;
-    
+.job-title {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.cardBody {
-    border-radius: 20px 20px 20px 20px!important; /*not working*/
+.card-body {
+  border-radius: 0 0 5px 5px !important;
+  background-color: #f1f3f8;
 }
 
 .pict {
-    height: 150px;
-    width: 150px;
-    padding: 5rem;
-    border: solid 2px;
-    border-color: #3B59F9;
-    border-image: linear-gradient(135deg, rgb(18, 10, 65), rgb(206, 226, 245)) 1; /*When I use this, it becomes a square*/
-    /*border-radius: 50% !important; I created different shapes here, this is my favorite so far. Let me know what you think please*/
+  height: 150px;
+  width: 100%;
+  border: solid 2px;
+  border-color: var(--blue);
+  border-image: linear-gradient(var(--blue), var(--light-blue)) 1; 
 }
 
-.BtnTeam {
-    background-color: #3B59F9 !important;
+.btn-team {
+  background-color: var(--dark-blue);
 }
 
 /*link to google fonts: <style>
