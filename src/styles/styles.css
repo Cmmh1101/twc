@@ -64,7 +64,7 @@ hr.solid {
 
 .hero-arrow {
   cursor: pointer;
-  transform: translateY(70%);
+  transform: translateY(90%);
   animation: fadeIn 13s;
 }
 
@@ -166,8 +166,14 @@ hr.solid {
 }
 
 .navbar {
-  background-color: var(--dark-color);
+  background-color: rgb(23, 23, 24);
   color: var(--white);
+}
+.navbar img {
+  transition: var(--transition);
+}
+.navbar:hover img {
+  transform: scale(1.1);
 }
 
 /*Resources*/

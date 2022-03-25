@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,35 +11,30 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Container,
 } from "reactstrap";
-class TopNavbar extends Component<any, any> {
-  constructor(props: any) {
-    super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
-  render() {
-    return (
-      <Navbar tag="nav" className="navbar" dark expand="md">
+const TopNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <Navbar tag="nav" fixed="top" className="navbar shadow" dark expand="md">
+      <Container>
         <NavbarBrand className="mr-auto" href="/">
           <img
-            src="/twcLogo2.jpeg"
+            src="/logo.png"
             className="navbar-image"
             height="100"
             width="100"
             alt="Teachers Who Code logo"
           />
         </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="px-3">
               <NavLink href="/components/">Home</NavLink>
@@ -79,8 +74,9 @@ class TopNavbar extends Component<any, any> {
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
-    );
-  }
-}
+      </Container>
+    </Navbar>
+  );
+};
+
 export default TopNavbar;
