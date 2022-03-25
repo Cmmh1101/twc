@@ -1,4 +1,7 @@
 import React, { Component, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+
 import {
   Collapse,
   Navbar,
@@ -36,6 +39,10 @@ const TopNavbar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            <NavItem className="my-auto">
+              <FontAwesomeIcon icon={faMoon} className="" />
+            </NavItem>
+
             <NavItem className="px-3">
               <NavLink href="/components/">Home</NavLink>
             </NavItem>
