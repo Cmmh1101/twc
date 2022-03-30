@@ -1,14 +1,22 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
+import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
 interface Props {}
 
 const IntroTWC = (props: Props) => {
+  const { englishMode } = useTheme();
   return (
     <Container className="mb-5" id="twc-intro">
       <Row>
-        <MainHeader headerText="What is Teachers Who Code" />
+        <MainHeader
+          headerText={
+            englishMode
+              ? "Que es Teachers Who Code"
+              : "What is Teachers Who Code"
+          }
+        />
         <Col
           xs={12}
           className="d-flex align-items-center justify-content-center flex-wrap mb-5"
