@@ -11,7 +11,7 @@ function useTheme() {
 
 const ThemeModeProvider = (props: { children: ReactNode }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [englishMode, setEnglishMode] = useState(true);
+  const [englishMode, setEnglishMode] = useState(false);
 
   const handleToggleLanguage = () => {
     setEnglishMode(!englishMode);
@@ -20,8 +20,8 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
   };
-  const dark = "#000";
-  const light = "#fff";
+  const dark = "#1b1b1b";
+  const light = "#f5f5f6";
 
   const themes = {
     light: {

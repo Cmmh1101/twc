@@ -8,7 +8,12 @@ const ToggleLangButton = () => {
     <button
       style={
         englishMode
-          ? { backgroundColor: "red", color: "white" }
+          ? {
+              backgroundImage: 'url("../../../images/usaflag.png")',
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }
           : {
               backgroundImage: 'url("../../../images/espFlag.png")',
               backgroundPosition: "center",
@@ -19,9 +24,7 @@ const ToggleLangButton = () => {
       className="theme-btn lang-btn mx-3"
       type="button"
       onClick={handleToggleLanguage}
-    >
-      {englishMode ? "En" : ""}
-    </button>
+    />
   );
 };
 
