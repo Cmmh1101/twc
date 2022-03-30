@@ -5,10 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { ThemeModeProvider } from "./provider/ThemeModeProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeModeProvider>
+      <App />
+    </ThemeModeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
