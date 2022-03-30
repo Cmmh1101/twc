@@ -209,3 +209,9 @@ hr.solid {
     width: 50px;
   }
 }
+
+/*Blog Post List*/
+.card-image{
+  box-shadow: 4px 4px 4px grey;
+  aspect-ratio: 1/1;
+}
