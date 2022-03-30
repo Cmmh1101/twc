@@ -1,6 +1,4 @@
-import React, { Component, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 
 import {
   Collapse,
@@ -16,6 +14,8 @@ import {
   DropdownItem,
   Container,
 } from "reactstrap";
+import ToggleLangButton from "./ToggleLangButton";
+import ToggleModeButton from "./ToggleModeButton";
 
 const TopNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +40,11 @@ const TopNavbar = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="my-auto">
-              <FontAwesomeIcon icon={faMoon} className="" />
+              <ToggleModeButton />
             </NavItem>
-
+            <NavItem className="my-auto">
+              <ToggleLangButton />
+            </NavItem>
             <NavItem className="px-3">
               <NavLink href="/components/">Home</NavLink>
             </NavItem>
