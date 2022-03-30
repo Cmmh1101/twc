@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", Verdana, sans-serif;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
 }
 
 main {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 :root {
