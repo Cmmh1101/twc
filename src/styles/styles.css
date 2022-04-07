@@ -217,6 +217,7 @@ hr.solid {
 }
 .team-card {
   border-radius: 0 25px 0 25px;
+  overflow: hidden;
 }
 .team-member {
   font-size: 1.5rem;
@@ -240,12 +241,12 @@ hr.solid {
   border-image: linear-gradient(var(--blue), var(--light-blue)) 1;
   position: relative;
   opacity: 0.7;
-  transition: 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .pict:hover {
-  box-shadow: 0.5rem 0.5rem 0.5rem rgb(50, 45, 58);
-  transform: scale(1.1); /* 110% zoom */
+  /*box-shadow: 0.5rem 0.5rem 0.5rem rgb(50, 45, 58);*/
+  transform: scale(1.1); /* 102% zoom */
   opacity: 1;
 }
 
