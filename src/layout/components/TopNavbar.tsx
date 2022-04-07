@@ -1,4 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
+
 import {
   Collapse,
   Navbar,
@@ -13,6 +14,8 @@ import {
   DropdownItem,
   Container,
 } from "reactstrap";
+import ToggleLangButton from "./ToggleLangButton";
+import ToggleModeButton from "./ToggleModeButton";
 
 const TopNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +39,12 @@ const TopNavbar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            <NavItem className="my-auto">
+              <ToggleModeButton />
+            </NavItem>
+            <NavItem className="my-auto">
+              <ToggleLangButton />
+            </NavItem>
             <NavItem className="px-3">
               <NavLink href="/components/">Home</NavLink>
             </NavItem>
