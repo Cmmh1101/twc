@@ -229,3 +229,11 @@ hr.solid {
 .footer-title{
   color: #f0ffff;
 }
+
+.socialIcon{
+  display:"flex";
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+

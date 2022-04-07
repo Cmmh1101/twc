@@ -38,7 +38,9 @@ const Footer = () => {
            <h4 className="footer-title"> Follow Us </h4>
            <ul className="list-unstyled">
             <li>
-            <FaGithub size= "2em" /> <FaLinkedin size= "2em"/> <FaYoutube size= "2em"/></li>            
+            <FaYoutube className="socialIcon" size= "2em"/> 
+            <FaGithub className="socialIcon" size= "2em"/>
+            <FaLinkedin className="socialIcon" size= "2em"/></li>            
           </ul>     
           
         </Col>
