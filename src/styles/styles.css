@@ -209,3 +209,31 @@ hr.solid {
     width: 50px;
   }
 }
+
+/* footer*/
+
+.footer {
+  background-color: var(--dark-color);
+  color: #f0ffff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  padding-left: 10rem;
+  position: relative;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title{
+  color: #f0ffff;
+}
+
+.socialIcon{
+  display:"flex";
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
