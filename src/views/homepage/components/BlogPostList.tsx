@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row, CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
+import { Col, Container, Row, CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import MainHeader from "../../../utils/MainHeader";
 
 const BlogPostList = () => {
