@@ -6,6 +6,10 @@
   letter-spacing: 0.5px;
 }
 
+main {
+  transition: all 0.8s ease-in-out;
+}
+
 :root {
   --overlay: #f0ffffe8;
   --dark-color: #1b1b1b;
@@ -16,11 +20,26 @@
   --transition: all 0.3s ease-in-out;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: var(--dark-color);
+} */
+
+.theme-btn {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.lang-btn {
+  width: 22px;
+  height: 22px;
 }

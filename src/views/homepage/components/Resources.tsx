@@ -1,13 +1,18 @@
 import React from "react";
 import { Button, Col, Container, Row } from "reactstrap";
+import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
 const Resources = () => {
+  const { englishMode } = useTheme();
   return (
     <section className="resources-box py-5">
       <Container>
         <Row>
-          <MainHeader headerText="Resources" customClass="text-light" />
+          <MainHeader
+            headerText={englishMode ? "Recursos" : "Resources"}
+            customClass="text-light"
+          />
           <Col
             xs={12}
             className="d-flex align-items-center justify-content-center flex-wrap mb-5"
