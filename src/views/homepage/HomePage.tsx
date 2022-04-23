@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import MeetTeam from "./components/MeetTeam";
 import IntroTWC from "./components/IntroTWC";
 import Resources from "./components/Resources";
+import CareerTest from "./components/CareerTest";
+
 
 const HomePage = () => {
   return (
@@ -11,6 +13,7 @@ const HomePage = () => {
       <IntroTWC />
       <Resources />
       <MeetTeam />
+      <CareerTest />
     </>
   );
 };
