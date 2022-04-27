@@ -2,6 +2,7 @@
   "name": "teachers-who-code",
   "version": "0.1.0",
   "private": true,
+  "main": "node_modules/webpack/lib/index.js",
   "dependencies": {
     "@fontsource/poppins": "^4.5.3",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
