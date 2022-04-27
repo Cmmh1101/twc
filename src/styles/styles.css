@@ -4,7 +4,7 @@ hr.solid {
   border: 0;
   height: 5px;
   background: var(--blue);
-  background: linear-gradient(165deg, #3b59f9 0%, #a9b7ff 68%);
+  background: linear-gradient(165deg, #3956f9 0%, #a9b7ff 68%);
 }
 
 /* hero */
@@ -265,4 +265,12 @@ hr.solid {
   position: relative;
   width: max-content;
   color: azure;
+}
+
+/*Tech Paths*/
+.techpaths-title {
+  margin: 0 auto;
+  position: relative;
+  width: max-content;
+  color: #3956f9;
 }
