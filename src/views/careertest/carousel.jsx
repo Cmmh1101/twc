@@ -45,7 +45,7 @@ class HeroCarousel extends Component {
 
         const slides = questionsData.map((question, i) => {
             return (
-                <CarouselItem
+                <CarouselItem 
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={i}
@@ -90,10 +90,7 @@ class HeroCarousel extends Component {
           </FormGroup>
                 </Form>
                 </CardBody>
-                <Col className="d-flex justify-content-center my-5">
-          <Button className="resources-button mb-5 mb-md-0 mx-auto">
-               Next
-              </Button>
+          <Col>     
           </Col>
             </Card>
             
@@ -110,19 +107,39 @@ class HeroCarousel extends Component {
                     activeIndex={activeIndex}
                     next={this.next}
                     previous={this.previous}
+                    interval = {null} //stops autoplay
                 >
                     {slides}
-                    <CarouselControl
-                        className='primary'
-                        direction="prev"
-                        directionText="Previous"
-                        onClickHandler={this.previous}
+
+                 {/* <CarouselControl
+                    className='primary'
+                    direction="prev"
+                    directionText="Previous"
+                    onClickHandler={this.previous}
                     />
-                    <CarouselControl
-                        direction="next"
-                        directionText="Next"
-                        onClickHandler={this.next}
-                    />
+                <CarouselControl
+                    direction="next"
+                    directionText="Next"
+                    onClickHandler={this.next} 
+                    /> */}
+
+                     <Button className="resources-button mb-5 mb-md-0 mx-auto"
+                    direction="prev"
+                    directionText="Previous"
+                    onClick={this.previous}
+                    style = {{marginRight:'20px'}}
+                    >
+                    Previous Question
+                   </Button> 
+                   <Button className="resources-button mb-5 mb-md-0 mx-auto"
+                    direction="next"
+                    directionText="Next"
+                    onClick={this.next}
+                    style = {{display: 'flex', float:'right'}}>
+                    Next Question
+                   </Button>
+                        
+                    
                 </Carousel>
             </>
         );

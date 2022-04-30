@@ -22,7 +22,7 @@ export const questionsData = [
     answerD: 'D',
     answerE: 'E'
 },
-    {Queston: 'Qui praesentium quas est illum illo assumenda inventore eius dolor',
+    {Question: 'Qui praesentium quas est illum illo assumenda inventore eius dolor',
 
     answerA:'A',
     answerB:'B',
@@ -51,7 +51,7 @@ export const questionsData = [
     answerD: 'D',
     answerE: 'E'
 },
-    {Queston: 'Qui praesentium quas est illum illo assumenda inventore eius dolor',
+    {Question: 'Qui praesentium quas est illum illo assumenda inventore eius dolor',
     answerA:'A',
     answerB:'B',
     answerC:'C',
