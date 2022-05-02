@@ -5,7 +5,7 @@ import MainHeader from "../../../utils/MainHeader";
 
 interface Props { }
 
-const RoleDescription = (props: Props) => {
+const UXDesign = (props: Props) => {
     const { englishMode } = useTheme();
     return (
         <section className="py-5">
@@ -13,12 +13,12 @@ const RoleDescription = (props: Props) => {
                 <Row>
                     {englishMode ? (
                         <>
-                            <h1 className="techpaths-title"> Carrera </h1>
+                            <h1 className="techpaths-title"> Diseño UX </h1>
 
                         </>
                     ) : (
                         <>
-                            <h1 className="techpaths-title"> Tech Path </h1>
+                            <h1 className="techpaths-title"> UX Design </h1>
 
                         </>
                     )}
@@ -130,4 +130,4 @@ const RoleDescription = (props: Props) => {
     );
 };
 
-export default RoleDescription;
+export default UXDesign;
