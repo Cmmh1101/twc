@@ -9,6 +9,7 @@ const AppRouter = () => {
     <>
       <Switch>
         <Route path="/" component={HomePage} exact />
+
         <Route path="/techpaths" component={TechPaths} exact />
 
         {/* all new routes should be added above */}

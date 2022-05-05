@@ -18,14 +18,9 @@ import Path3 from "../components/Path3";
 
 
 const TechPathsNav = () => {
-    /*
-        const [currentActiveTab, setCurrentActiveTab] = useState('1');
-    
-        // Toggle active state for Tab
-        const toggle = tab => {
-            if (currentActiveTab !== tab) setCurrentActiveTab(tab);
-        }
-    */
+
+    const [activeTab, setActiveTab] = useState('1');
+
     return (
         <div>
             <Nav
@@ -35,37 +30,37 @@ const TechPathsNav = () => {
                 className="flex-column flex-md-row"
             >
                 <NavItem>
-                    <NavLink className="" eventKey="">
+                    <NavLink className={activeTab == '1' ? 'active' : ''} onClick={() => setActiveTab('1')}>
                         UX Design
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="" href="2">
+                    <NavLink className={activeTab == '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
                         Path 2
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="">
+                    <NavLink className={activeTab == '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
                         Path 3
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="">
+                    <NavLink className={activeTab == '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
                         Path 4
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="">
+                    <NavLink className={activeTab == '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
                         Path 5
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="">
+                    <NavLink className={activeTab == '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
                         Path 6
                     </NavLink>
                 </NavItem>
             </Nav>
-            <TabContent activeTab={'1'}>
+            <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
                     <UXDesign />
                 </TabPane>

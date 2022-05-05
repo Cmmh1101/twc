@@ -46,15 +46,19 @@ const TopNavbar = () => {
               <ToggleLangButton />
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar className="dropdown">
-              <DropdownToggle nav className="px-3">
-                Path
-              </DropdownToggle>
+              <NavItem className="px-3">
+                <NavLink href="/techpaths">Paths</NavLink>
+              </NavItem>
               <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
                 <DropdownItem>Path 2</DropdownItem>
+                <DropdownItem>Path 3</DropdownItem>
+                <DropdownItem>Path 4</DropdownItem>
+                <DropdownItem>Path 5</DropdownItem>
+                <DropdownItem>Path 6</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar className="dropdown">
