@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
-const Resources = () => {
+const Block = () => {
   const { englishMode } = useTheme();
   return (
     <section className="resources-box py-5">
@@ -25,7 +25,7 @@ const Resources = () => {
               </p>
               <ul className="pl-3">
                 <li>Tutorials</li>
-                <li>Courses</li>
+                <li>Cources</li>
                 <li>Podcasts</li>
                 <li>Books</li>
               </ul>
@@ -48,4 +48,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default Block;

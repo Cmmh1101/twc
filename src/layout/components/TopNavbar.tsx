@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -7,7 +7,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -46,7 +45,7 @@ const TopNavbar = () => {
               <ToggleLangButton />
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar className="dropdown">
               <DropdownToggle nav className="px-3">
@@ -59,27 +58,28 @@ const TopNavbar = () => {
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar className="dropdown">
               <DropdownToggle nav className="px-3">
-                Resources
+              <NavLink to="/resourcesPage">Resources </NavLink>
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem>Resource 1</DropdownItem>
+                <DropdownItem ><NavLink to="/resource">Resource </NavLink>
+                </DropdownItem>
                 <DropdownItem>Resource 2</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <a href="https://github.com/reactstrap/reactstrap">
                 Blog
-              </NavLink>
+              </a>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <a href="https://github.com/reactstrap/reactstrap">
                 FAQ
-              </NavLink>
+              </a>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <a href="https://github.com/reactstrap/reactstrap">
                 Contact
-              </NavLink>
+              </a>
             </NavItem>
           </Nav>
         </Collapse>
