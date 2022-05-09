@@ -1,18 +1,19 @@
 import React from "react";
-/*import { Navbar } from "reactstrap";*/
 import Hero from "./components/Hero";
-import Block from "./components/Block";
 import Navbar from "./components/NavBar";
+import Card from "./components/Card";
+
+
 
 
 const ResourcesPage = () => {
   return (
     <>
-    
       <Hero />
       <Navbar/>
-      <Block/>
-     
+      <Card/>
+      <Card/>
+      <Card/>
     </>
   );
 };

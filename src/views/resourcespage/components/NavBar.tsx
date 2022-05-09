@@ -9,10 +9,10 @@ import {
     TabContent,
     TabPane,
 } from "reactstrap";
-import ResourceDetail from "../components/resourceDetail";
-import Resource1 from "../components/resource1";
-import Resource2 from "../components/resource2";
-import Resource3 from "../components/resource3";
+import ResourceDetail from "./resourceDetail";
+import Tutorials from "./tutorials";
+import Resource2 from "./resource2";
+
 
 
 const Navbar = () => {
@@ -29,45 +29,33 @@ const Navbar = () => {
             >
                 <NavItem>
                     <NavLink className={activeTab == '1' ? 'active' : ''} onClick={() => setActiveTab('1')}>
-                        Resource 1
+                        Tutorials
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink className={activeTab == '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
-                        Path 2
+                        Courses
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink className={activeTab == '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
-                        Path 3
+                        Podcasts
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink className={activeTab == '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
-                        Path 4
+                        Books
                     </NavLink>
                 </NavItem>
-                <NavItem>
-                    <NavLink className={activeTab == '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
-                        Path 5
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={activeTab == '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
-                        Path 6
-                    </NavLink>
-                </NavItem>
+
             </Nav>
             
             <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
-                    <Resource1/>
+                    <Tutorials/>
                 </TabPane>
                 <TabPane tabId="2">
                     <Resource2 />
-                </TabPane>
-                <TabPane tabId="3">
-                    <Resource3/>
                 </TabPane>
                 <TabPane tabId="4">
                     <ResourceDetail />

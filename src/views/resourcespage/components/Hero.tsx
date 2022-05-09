@@ -12,16 +12,16 @@ const Hero = () => {
         <Container fluid>
           {englishMode ? (
             <>
-              <h1 className="display-3"> Recursos </h1>
+              <h1 className="display-3"> Resources </h1>
               <p className="lead">
-                Lo que necesitas para triunfar en el mundo de la technologia
+                Tools to succeed in the tech world
               </p>
             </>
           ) : (
             <>
-              <h1 className="display-3"> Resources </h1>
+              <h1 className="display-3"> Recursos</h1>
               <p className="lead">
-               What you need to succeed in the tech world
+              Herramientas para triunfar en el mundo de la tecnologia
               </p>
             </>
           )}
