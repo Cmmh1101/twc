@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Edit Article</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="single-article-form">
+            <h4>Edit Article</h4>
+            <div class="form-control">
+                <label>Article ID</label>
+                <p class="article-edit-id"></p>
+            </div>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="article-edit-title" />
+            </div>
+            <div class="form-control">
+                <label for="published">published</label>
+                <input type="checkbox" name="published" class="article-edit-published" />
+            </div>
+            <div class="form-control">
+                <label for="content">Content</label>
+                <input type="textarea" name="content" class="article-edit-content" />
+            </div>
+            <button type="submit" class="block btn article-edit-btn">edit</button>
+            <div class="form-alert"></div>
+        </form>
+        <a href="index.html" class="btn back-link">back to articles</a>
+    </div>
+    <section class="articles-container">
+        <p class="loading-text">Loading...</p>
+        <div class="articles"></div>
+      </section>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js -->
+    <script src="./edit-article.js"></script>
+    <script src="./browser-app.js"></script>
+</body>
+
+</html>
