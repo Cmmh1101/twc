@@ -24,17 +24,19 @@ const answerC= 0;
 const answerD= 0;
 const answerE= 0; 
 
-(esto es lo que no se como hacer con los botones del radio)
-If button a is clicked:
-   answerA += 1
-elif button b is clicked:
-   answerB += 1
-elif button c is clicked:
+(para contar los clicks a los botones de radio)
+if userClicked={userAnswer?.answer===a
+    answerA += 1
+elif userClicked={userAnswer?.answer===b
+    answerB += 1
+elif userClicked={userAnswer?.answer===c
     answerC += 1
-elif button d is clicked:
+elif userClicked={userAnswer?.answer===d
     answerD +=1
-elif button e is clicked:
+elif userClicked={userAnswer?.answer===e
    answerE += 1
+
+
 
 For answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE:
 console.log("Your are best suited for a career in {category_a}")
