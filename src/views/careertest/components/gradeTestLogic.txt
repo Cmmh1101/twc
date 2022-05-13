@@ -1,5 +1,5 @@
 
-function showResults(){}
+
 
     category_a --> UXUI = "ux/ui",
     category_b -->FRONTEND = "frontEnd",
@@ -16,7 +16,9 @@ function showResults(){}
             category_e: string; 
     }
 
-While questionNr =< 10:
+function showResults(){}
+
+While questionNr =< 10: 
 
 const answerA= 0;
 const answerB= 0;
@@ -35,6 +37,8 @@ elif userClicked={userAnswer?.answer===d
     answerD +=1
 elif userClicked={userAnswer?.answer===e
    answerE += 1
+
+
 
 
 
