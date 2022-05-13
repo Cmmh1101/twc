@@ -40,19 +40,19 @@ elif userClicked={userAnswer?.answer===e
 
 
 
+(Display reults, this better done with If statements)
 
-
-For answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE:
+if answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE:
 console.log("Your are best suited for a career in {category_a}")
 
-For answerB > answerA and answerB > answerC and answerB > category_d and category_b > answerE:
+elif answerB > answerA and answerB > answerC and answerB > category_d and category_b > answerE:
 console.log("Your are best suited for a career in {category_b}")
 
-For answerC > answerA and answerC > answerB and answerC > category_d and answerC > answerE:
+elif answerC > answerA and answerC > answerB and answerC > category_d and answerC > answerE:
 console.log("Your are best suited for a career in {category_c}")
 
-For answerD > answerA and answerD > answerB and answerD > answerC and answerD > answerE:
+elif answerD > answerA and answerD > answerB and answerD > answerC and answerD > answerE:
 console.log("Your are best suited for a career in {category_d}")
 
-For answerE > answerA and answerE > answerB and answerE > category_c and answerE > category_d:
+else:
 console.log("Your are best suited for a career in {category_e}")
