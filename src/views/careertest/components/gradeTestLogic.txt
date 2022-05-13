@@ -16,7 +16,7 @@
             category_e: string; 
     }
 
-function showResults(){}
+const showResults(){} (para declarar la funcion?)
 
 While questionNr =< 10: 
 
