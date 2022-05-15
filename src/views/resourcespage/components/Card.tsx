@@ -1,28 +1,54 @@
 import React from "react";
-import { Button } from "reactstrap";
-import { useTheme } from "../../../provider/ThemeModeProvider";
+import CardItem from "./CardItem";
 
 
-function Card() {
-  const { englishMode } = useTheme();
+
+const Card =() => {
+
+const data =[  
+  { 
+    image: "../images/books.jpg",
+    title: 'tutorials',
+    description: 
+    'short description here',
+    },
+  { 
+    image: "../images/books.jpg",
+    title: 'courses',
+    description: 
+    'short description here',
+    },
+  { 
+    image: "../images/books.jpg",
+    title: 'podcasts',
+    description: 
+    'short description here',
+    },
+  { 
+    image: "../images/books.jpg",
+    title: 'books',
+    description: 
+    'short description here',
+   },
+  ];
+
   return (
-
-    <div className="card">
-        <div className="card_body">
-        <img 
-            src="https://picsum.photos/318/180"
-             alt="filler"  
-        />
-        <h2 className="card_title">Tutorial 1</h2>
-        <p className="card_description">Learn to do this and this and that</p>
-        <Button className="resources-button m-5 mb-md-0">
-             Visit
-        </Button>
+    <div 
+      className= "d-flex align-items-center"
+      style={{width: '100vw', height: '100vh'}}
+      >
+      {data.map((item, i)=> {
+        return (
+          <CardItem 
+          key={i}
+          image={item.image}  
+          title={item.title}
+          description={item.description}
+          />
+        )
+      })}
     </div>
-    </div>
-
-
-  );
+  )
 };
 
 export default Card;

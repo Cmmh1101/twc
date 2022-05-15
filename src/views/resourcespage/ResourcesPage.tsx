@@ -12,8 +12,6 @@ const ResourcesPage = () => {
       <Hero />
       <Navbar/>
       <Card/>
-      <Card/>
-      <Card/>
     </>
   );
 };
