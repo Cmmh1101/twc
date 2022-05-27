@@ -1,11 +1,9 @@
 
-
-
-    category_a --> UXUI = "ux/ui",
-    category_b -->FRONTEND = "frontEnd",
-    category_c -->BACKEND = "backEnd",
-    category_d -->DATASCIENCE = "dataScience",
-    category_e -->PROJECTMANAGEMENT = "projectManagement"
+    const category_a = "UX/UI";
+    category_b = "Front End";
+    category_c = "Back End";
+    category_d = "Data Science";
+    category_e = "Project Management";
 
     type Props =
         {
