@@ -16,43 +16,41 @@
             category_e: string; 
     }
 
-const showResults(){} (para declarar la funcion?)
+const showResults = () =>{
 
-While questionNr =< 10: (no se si esto existe en JS, quiere decir "mientras el questionNr sea menor o igual que 10)
+While (questionNr =< 10) { 
+let answerA= 0;
+let answerB= 0;
+let answerC= 0;
+let answerD= 0;
+let answerE= 0; 
 
-const answerA= 0;
-const answerB= 0;
-const answerC= 0;
-const answerD= 0;
-const answerE= 0; 
-
-(para contar los clicks a los botones de radio)
-if userClicked={userAnswer?.answer===a
-    answerA += 1
-elif userClicked={userAnswer?.answer===b
-    answerB += 1
-elif userClicked={userAnswer?.answer===c
-    answerC += 1
-elif userClicked={userAnswer?.answer===d
-    answerD +=1
-elif userClicked={userAnswer?.answer===e
-   answerE += 1
-
+if (userAnswer?.answer===a)
+    {answerA += 1}
+else if (userAnswer?.answer===b)
+    {answerB += 1}
+else if (userAnswer?.answer===c)
+    {answerC += 1}
+else if (userAnswer?.answer===d)
+    {answerD +=1}
+else if (userAnswer?.answer===e)
+   {answerE += 1}
+}
 
 
-(Display reults, this better done with If statements)
+if (answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE)
+{console.log(`Your are best suited for a career in ${category_a}`)}
 
-if answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE:
-console.log("Your are best suited for a career in {category_a}")
+else if (answerB > answerA and answerB > answerC and answerB > category_d and category_b > answerE)
+{console.log(`Your are best suited for a career in ${category_b}`)}
 
-elif answerB > answerA and answerB > answerC and answerB > category_d and category_b > answerE:
-console.log("Your are best suited for a career in {category_b}")
+else if (answerC > answerA and answerC > answerB and answerC > category_d and answerC > answerE)
+{`console.log("Your are best suited for a career in ${category_c}`)}
 
-elif answerC > answerA and answerC > answerB and answerC > category_d and answerC > answerE:
-console.log("Your are best suited for a career in {category_c}")
+else if (answerD > answerA and answerD > answerB and answerD > answerC and answerD > answerE)
+{console.log(`Your are best suited for a career in ${category_d}`)}
 
-elif answerD > answerA and answerD > answerB and answerD > answerC and answerD > answerE:
-console.log("Your are best suited for a career in {category_d}")
+else 
+{console.log(`Your are best suited for a career in ${category_e}`)}
 
-else:
-console.log("Your are best suited for a career in {category_e}")
+}
