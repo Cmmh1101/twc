@@ -11,20 +11,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
-        {/* <Route />
-                <Route />
-                <Route />
-                 */}
       </Routes>
-      {/* <Switch>
-        <Route path="/" component={HomePage} exact />
-
-        <Route path="/techpaths" component={TechPaths} exact />
-
-        
-        <Route component={NotFoundPage} />
-        <Redirect to="/" />
-      </Switch> */}
     </>
   );
 };
