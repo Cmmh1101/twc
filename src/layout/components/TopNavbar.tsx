@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+
 import {
   Collapse,
   Navbar,
@@ -11,46 +12,53 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Container,
 } from "reactstrap";
-class TopNavbar extends Component<any, any> {
-  constructor(props: any) {
-    super(props);
+import ToggleLangButton from "./ToggleLangButton";
+import ToggleModeButton from "./ToggleModeButton";
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
-  render() {
-    return (
-      <Navbar tag="nav" className="navbar" dark expand="md">
+const TopNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <Navbar tag="nav" fixed="top" className="navbar shadow" dark expand="md">
+      <Container>
         <NavbarBrand className="mr-auto" href="/">
           <img
-            src="/twcLogo2.jpeg"
+            src="/logo.png"
             className="navbar-image"
             height="100"
             width="100"
             alt="Teachers Who Code logo"
           />
         </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            <NavItem className="my-auto">
+              <ToggleModeButton />
+            </NavItem>
+            <NavItem className="my-auto">
+              <ToggleLangButton />
+            </NavItem>
             <NavItem className="px-3">
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar className="dropdown">
-              <DropdownToggle nav className="px-3">
-                Path
-              </DropdownToggle>
+              <NavItem className="px-3">
+                <NavLink href="/techpaths">Paths</NavLink>
+              </NavItem>
               <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
                 <DropdownItem>Path 2</DropdownItem>
+                <DropdownItem>Path 3</DropdownItem>
+                <DropdownItem>Path 4</DropdownItem>
+                <DropdownItem>Path 5</DropdownItem>
+                <DropdownItem>Path 6</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar className="dropdown">
@@ -79,8 +87,9 @@ class TopNavbar extends Component<any, any> {
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
-    );
-  }
-}
+      </Container>
+    </Navbar>
+  );
+};
+
 export default TopNavbar;
