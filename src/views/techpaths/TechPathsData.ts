@@ -6,7 +6,12 @@ const TechPathsData =
         {
             titleEnglish: "UXDesign",
             titleSpanish: "Diseño UX",
-            roleDescriptionEnglish: "Lorem ipsum dolor sit amet. Sed harum minus est expedita eligendi est eius culpa qui odio maxime. Qui debitis totam qui dolor illo et molestias molestiae aut sint ipsam sed harum odio. Cum molestiae placeat et omnis ipsa ad dolores nobis est quam nulla."
+            roleDescriptionEnglish: "This is the UX Design description"
+        },
+        {
+            titleEnglish: "Path 2",
+            titleSpanish: "Carrera 2",
+            roleDescriptionEnglish: "This is the Path 2 description"
         }
     ]
 

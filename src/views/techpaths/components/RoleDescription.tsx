@@ -1,24 +1,25 @@
-import React from "react";
+import path from "path";
+import React, { useState } from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
-interface Props { }
 
-const RoleDescription = (props: Props) => {
+function RoleDescription({ ...techPath }) {
     const { englishMode } = useTheme();
+
     return (
         <section className="py-5">
             <Container className="mb-5" id="twc-intro">
                 <Row>
                     {englishMode ? (
                         <>
-                            <h1 className="techpaths-title"> Carrera </h1>
+                            <h1 className="techpaths-title"> {techPath.titleSpanish} </h1>
 
                         </>
                     ) : (
                         <>
-                            <h1 className="techpaths-title"> Tech Path </h1>
+                            <h1 className="techpaths-title"> {techPath.titleEnglish} </h1>
 
                         </>
                     )}
@@ -45,9 +46,7 @@ const RoleDescription = (props: Props) => {
                         </Col>
                         <Col xs={12} md={12} className="mt-4 px-5">
                             <p className="">
-                                Lorem ipsum dolor sit amet. Sed harum minus est expedita eligendi est eius culpa qui odio maxime.
-                                Qui debitis totam qui dolor illo et molestias molestiae aut sint ipsam sed harum odio.
-                                Cum molestiae placeat et omnis ipsa ad dolores nobis est quam nulla.
+                                {techPath.roleDescriptionEnglish}
                             </p>
                         </Col>
                     </Col>
