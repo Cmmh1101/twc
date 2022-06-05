@@ -1,5 +1,4 @@
-import path from "path";
-import React, { useState } from "react";
+import React from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
@@ -39,15 +38,24 @@ function RoleDescription({ ...techPath }) {
                         <Col xs={12} md={12} className="px-0">
                             <div className="intro-img">
                                 <img
-                                    src="https://picsum.photos/318/180"
-                                    alt="filler"
+                                    src={techPath.descriptionImage}
+                                    alt={techPath.descriptionImageAltText}
                                 />
                             </div>
                         </Col>
                         <Col xs={12} md={12} className="mt-4 px-5">
-                            <p className="">
-                                {techPath.roleDescriptionEnglish}
-                            </p>
+                            {englishMode ? (
+                                <>
+                                    <p> {techPath.roleDescriptionSpanish} </p>
+
+                                </>
+                            ) : (
+                                <>
+                                    <p> {techPath.roleDescriptionEnglish} </p>
+
+                                </>
+                            )}
+
                         </Col>
                     </Col>
                 </Row>
@@ -66,22 +74,24 @@ function RoleDescription({ ...techPath }) {
                         <Col xs={12} md={5} className="px-0">
                             <div className="intro-img">
                                 <img
-                                    src="https://picsum.photos/318/180"
-                                    alt="filler"
+                                    src={techPath.skillImage}
+                                    alt={techPath.skillImageAltText}
                                 />
                             </div>
                         </Col>
                         <Col xs={12} md={7} className="mt-4 px-5">
-                            <p className="">
-                                Ut maxime voluptate aut aliquam obcaecati At voluptas voluptatem.
-                                Et temporibus possimus et soluta voluptatem ut magni voluptatem eos voluptatibus officiis.
-                                Eum sequi voluptatibus quo similique consequuntur qui praesentium consequatur.
-                            </p>
-                            <p className="">
-                                Ut maxime voluptate aut aliquam obcaecati At voluptas voluptatem.
-                                Et temporibus possimus et soluta voluptatem ut magni voluptatem eos voluptatibus officiis.
-                                Eum sequi voluptatibus quo similique consequuntur qui praesentium consequatur.
-                            </p>
+                            {englishMode ? (
+                                <>
+                                    <p> {techPath.skillDescriptionSpanish} </p>
+
+                                </>
+                            ) : (
+                                <>
+                                    <p> {techPath.skillDescriptionEnglish} </p>
+
+                                </>
+                            )
+                            }
                         </Col>
                     </Col>
                 </Row>
@@ -98,29 +108,42 @@ function RoleDescription({ ...techPath }) {
                         className="d-flex align-items-center justify-content-center flex-wrap-reverse mb-5"
                     >
                         <Col xs={12} md={7} className="mt-4 px-5">
-                            <p className="">
-                                1Ut maxime voluptate aut aliquam obcaecati At voluptas voluptatem.
-                                Et temporibus possimus et soluta voluptatem ut magni voluptatem eos voluptatibus officiis.
-                                Eum sequi voluptatibus quo similique consequuntur qui praesentium consequatur.
-                            </p>
-                            <p className="">
-                                2Ut maxime voluptate aut aliquam obcaecati At voluptas voluptatem.
-                                Et temporibus possimus et soluta voluptatem ut magni voluptatem eos voluptatibus officiis.
-                                Eum sequi voluptatibus quo similique consequuntur qui praesentium consequatur.
-                            </p>
+                            {englishMode ? (
+                                <>
+                                    <p> {techPath.toolDescriptionSpanish} </p>
+
+                                </>
+                            ) : (
+                                <>
+                                    <p> {techPath.toolDescriptionEnglish} </p>
+
+                                </>
+                            )
+                            }
                         </Col>
                         <Col xs={12} md={5} className="px-0">
                             <div className="intro-img">
                                 <img
-                                    src="https://picsum.photos/318/180"
-                                    alt="filler"
+                                    src={techPath.toolImage}
+                                    alt={techPath.toolImageAltText}
                                 />
                             </div>
                         </Col>
                     </Col>
                     <Col xs={12} md={7} className="d-flex align-items-center justify-content-center">
                         <Button className="resources-button m-5 mb-md-0">
-                            Find resources
+                            {englishMode ? (
+                                <>
+                                    Busca los recursos
+
+                                </>
+                            ) : (
+                                <>
+                                    Find resources
+
+                                </>
+                            )
+                            }
                         </Button>
                     </Col>
                 </Row>
