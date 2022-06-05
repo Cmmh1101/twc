@@ -11,6 +11,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="techpaths" element={<TechPaths />} />
       </Routes>
     </>
   );
