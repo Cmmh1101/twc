@@ -1,5 +1,8 @@
 import React from 'react'
-import {Card, CardBody} from 'reactstrap';
+import {Container, Card, CardBody, Row, Col} from 'reactstrap';
+
+
+
 
 interface Props {
   image: string;
@@ -8,20 +11,25 @@ interface Props {
   link?: string;
 }
 
-/*to add properties in TS use {}and :Props, see example below*/
 const CardItem =({image, title, description}: Props) => {
+
   return (
-    <div 
-      className= "d-flex align-items-center"
-      style={{width: "100vw", height: "100vh"}}>
-          <Card>
+   
+      <Container>
+        <Row >
+          <Col xs={12} 
+          className="d-flex align-items-center justify-content-center flex-wrap">
+            <Card>
               <CardBody>
-                <img src={image} alt={''}/>
-                <h2>{title}</h2>
-                <h2>{description}</h2>
+              <h1>{title}</h1>
+              <img src={image} alt={''}/>
+              <h2>{description}</h2>
               </CardBody>
-          </Card>
-    </div>
+            </Card>
+          </Col>
+        </Row>
+    </Container>
+
   )
 };
 

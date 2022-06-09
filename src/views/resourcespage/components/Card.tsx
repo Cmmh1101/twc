@@ -2,31 +2,30 @@ import React from "react";
 import CardItem from "./CardItem";
 
 
-
 const Card =() => {
 
 const data =[  
   { 
     image: "../images/books.jpg",
-    title: 'tutorials',
+    title: 'Tutorials',
     description: 
     'short description here',
     },
   { 
     image: "../images/books.jpg",
-    title: 'courses',
+    title: 'Courses',
     description: 
     'short description here',
     },
   { 
     image: "../images/books.jpg",
-    title: 'podcasts',
+    title: 'Podcasts',
     description: 
     'short description here',
     },
   { 
     image: "../images/books.jpg",
-    title: 'books',
+    title: 'Books',
     description: 
     'short description here',
    },

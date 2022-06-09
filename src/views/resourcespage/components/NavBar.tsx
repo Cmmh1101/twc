@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-    Nav,
-    NavItem,
-    NavLink,
-    Container,
-    ListGroup,
-    ListGroupItem,
-    TabContent,
-    TabPane,
+import { Nav,  NavItem, NavLink, TabContent,TabPane,
 } from "reactstrap";
 import ResourceDetail from "./resourceDetail";
 import Tutorials from "./tutorials";
