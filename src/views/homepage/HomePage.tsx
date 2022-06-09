@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import IntroTWC from "./components/IntroTWC";
 import Resources from "./components/Resources";
 import BlogPostList from "./components/BlogPostList";
+import MeetTeam from "./components/MeetTeam";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <IntroTWC />
       <Resources />
       <BlogPostList />
+      <MeetTeam />
     </>
   );
 };
