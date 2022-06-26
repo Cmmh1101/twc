@@ -6,5 +6,6 @@
         "fortawesome",
         "reactstrap",
         "testid"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
