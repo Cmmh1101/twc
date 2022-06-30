@@ -62,9 +62,10 @@ const TopNavbar = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar className="dropdown">
-              <DropdownToggle nav className="px-3">
-                Resources
-              </DropdownToggle>
+              <NavItem className="px-3">
+                <NavLink href="/resources">Resources</NavLink>
+              </NavItem>
+
               <DropdownMenu>
                 <DropdownItem>Resource 1</DropdownItem>
                 <DropdownItem>Resource 2</DropdownItem>
