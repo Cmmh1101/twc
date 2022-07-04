@@ -1,12 +1,12 @@
 
-const ResourceData =[  
+const ResourceData = [  
   { 
     image:"https://picsum.photos/318/180",
     descriptionImageAltText:'',
     titleEnglish: 'Tutorials',
     titleSpanish:'Tutoriales',
     subtitleEnglish: 'Your Step by Step Journey',
-    DescriptionEnglish:'short description here',
+    DescriptionEnglish:'Short description here, this is just to see how it would look like with more text and more details. Ideally I would like the button closer to the text',
     DescriptionSpanish:'corta descripcion aqui',
     },
   { 
@@ -30,7 +30,7 @@ const ResourceData =[
     description: 
     'short description here',
    },
-  ];
+  ]
 
 
 export default ResourceData;

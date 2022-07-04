@@ -8,7 +8,6 @@ const ResourcesPage = () => {
         <>
         <ResourcesHero/>
         <ResourcesNav/>
-
         </>
     )
 }
