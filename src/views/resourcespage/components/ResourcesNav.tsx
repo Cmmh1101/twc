@@ -34,6 +34,7 @@ const ResourcesNav = () =>{
                                 }
                                 setResource(data)
                             }}>
+                            {data.titleEnglish}
                                 
                             </NavLink>
                         </NavItem>
@@ -52,5 +53,3 @@ const ResourcesNav = () =>{
 }
 
 export default ResourcesNav;
-/* add to line 36
-{data.titleEnglish} */
