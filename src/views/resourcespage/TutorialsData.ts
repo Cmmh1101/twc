@@ -1,5 +1,5 @@
 
-const ResourceData = [  
+const TutorialsData = [  
   { 
     image:"https://picsum.photos/318/180",
     descriptionImageAltText:'',
@@ -12,16 +12,18 @@ const ResourceData = [
   { 
     image:"https://picsum.photos/318/180",
     titleEnglish: 'Courses',
+    titleSpanish: 'Cursos',
     subtitleEnglish: 'Our best Recommendations',
-    description: 
-    'short description here',
+    DescriptionEnglish:'Short description here, this is just to see how it would look like with more text and more details. Ideally I would like the button closer to the text',
+    DescriptionSpanish:'corta descripcion aqui',
     },
   { 
     image:"https://picsum.photos/318/180",
     titleEnglish: 'Podcasts',
+    titleSpanish: 'Podcasts',
     subtitleEnglish: 'To learn on the go',
-    description: 
-    'short description here',
+    DescriptionEnglish:'Short description here, this is just to see how it would look like with more text and more details. Ideally I would like the button closer to the text',
+    DescriptionSpanish:'corta descripcion aqui',
     },
   { 
     image: "https://picsum.photos/318/180",
@@ -33,4 +35,4 @@ const ResourceData = [
   ]
 
 
-export default ResourceData;
+export default TutorialsData;

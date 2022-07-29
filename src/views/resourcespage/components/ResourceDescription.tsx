@@ -2,8 +2,9 @@ import React from "react";
 import { Button, Card, CardBody, CardTitle, CardSubtitle, CardImg, Container, CardGroup } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
+import TutorialsData from "../TutorialsData";
 
-function ResourceDescription({ ...ResourceData }) {
+function ResourceDescription({ ...TutorialsData }) {
     const { englishMode } = useTheme();
 
     return (
@@ -15,8 +16,8 @@ function ResourceDescription({ ...ResourceData }) {
                 <CardGroup className="d-flex align-items-center justify-content-center flex-wrap mb-5">
                     <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -28,11 +29,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -50,8 +51,8 @@ function ResourceDescription({ ...ResourceData }) {
                 </Card>
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -63,11 +64,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -86,8 +87,8 @@ function ResourceDescription({ ...ResourceData }) {
 
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -99,11 +100,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -132,8 +133,8 @@ function ResourceDescription({ ...ResourceData }) {
                 <CardGroup className="d-flex align-items-center justify-content-center flex-wrap mb-5">
                     <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -145,11 +146,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -167,8 +168,8 @@ function ResourceDescription({ ...ResourceData }) {
                 </Card>
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -180,11 +181,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -203,8 +204,8 @@ function ResourceDescription({ ...ResourceData }) {
 
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -216,11 +217,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -249,8 +250,8 @@ function ResourceDescription({ ...ResourceData }) {
                 <CardGroup className="d-flex align-items-center justify-content-center flex-wrap mb-5">
                     <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -262,11 +263,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -284,8 +285,8 @@ function ResourceDescription({ ...ResourceData }) {
                 </Card>
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -297,11 +298,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
@@ -320,8 +321,8 @@ function ResourceDescription({ ...ResourceData }) {
 
                 <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
-                            alt={ResourceData.descriptionImageAltText}
-                            src={ResourceData.image}
+                            alt={TutorialsData.descriptionImageAltText}
+                            src={TutorialsData.image}
                             top width="100%"
                             className="card-image" />
                         <CardBody>
@@ -333,11 +334,11 @@ function ResourceDescription({ ...ResourceData }) {
                                 tag="h6">
                                 {englishMode ? (
                                     <>
-                                        <p> {ResourceData.DescriptionSpanish} </p>
+                                        <p> {TutorialsData.DescriptionSpanish} </p>
                                     </>
                                 ) : (
                                     <>
-                                        <p> {ResourceData.DescriptionEnglish} </p>
+                                        <p> {TutorialsData.DescriptionEnglish} </p>
                                     </>
                                 )}
 
