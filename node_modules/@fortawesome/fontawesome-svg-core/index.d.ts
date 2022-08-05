@@ -2,7 +2,7 @@ import {IconDefinition, IconLookup, IconName, IconPrefix, IconPathData, IconPack
 export {IconDefinition, IconLookup, IconName, IconPrefix, IconPathData, IconPack } from '@fortawesome/fontawesome-common-types';
 export const dom: DOM;
 export const library: Library;
-export const parse: { transform(transformString: string): Transform };
+export const parse: { transform(transformString: string): Transform, icon(parseIconString: string): IconLookup };
 export const config: Config;
 export function noAuto():void;
 export function findIconDefinition(iconLookup: IconLookup): IconDefinition;
@@ -107,7 +107,7 @@ export interface IconParams extends Params {
   maskId?: string;
 }
 export interface DOM {
-  i2svg(params?: { node: Node; callback: () => void }): Promise<void>;
+  i2svg(params?: { node: Node; callback?: () => void }): Promise<void>;
   css(): string;
   insertCss(): string;
   watch(): void;

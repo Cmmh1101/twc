@@ -1,4 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
+
 import {
   Collapse,
   Navbar,
@@ -13,6 +14,8 @@ import {
   DropdownItem,
   Container,
 } from "reactstrap";
+import ToggleLangButton from "./ToggleLangButton";
+import ToggleModeButton from "./ToggleModeButton";
 
 const TopNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,22 +39,33 @@ const TopNavbar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            <NavItem className="my-auto">
+              <ToggleModeButton />
+            </NavItem>
+            <NavItem className="my-auto">
+              <ToggleLangButton />
+            </NavItem>
             <NavItem className="px-3">
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar className="dropdown">
-              <DropdownToggle nav className="px-3">
-                Path
-              </DropdownToggle>
+              <NavItem className="px-3">
+                <NavLink href="/techpaths">Paths</NavLink>
+              </NavItem>
               <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
                 <DropdownItem>Path 2</DropdownItem>
+                <DropdownItem>Path 3</DropdownItem>
+                <DropdownItem>Path 4</DropdownItem>
+                <DropdownItem>Path 5</DropdownItem>
+                <DropdownItem>Path 6</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar className="dropdown">
-              <DropdownToggle nav className="px-3">
-                Resources
-              </DropdownToggle>
+              <NavItem className="px-3">
+                <NavLink href="/resources">Resources</NavLink>
+              </NavItem>
+
               <DropdownMenu>
                 <DropdownItem>Resource 1</DropdownItem>
                 <DropdownItem>Resource 2</DropdownItem>

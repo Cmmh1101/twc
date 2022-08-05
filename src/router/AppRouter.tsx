@@ -1,18 +1,20 @@
 import React from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+// import { Redirect, Route, Switch } from "react-router-dom";
 import NotFoundPage from "../views/404page";
 import HomePage from "../views/homepage/HomePage";
+import TechPaths from "../views/techpaths/TechPaths";
+import ResourcesPage from "../views/resourcespage/ResourcesPage";
 
 const AppRouter = () => {
   return (
     <>
-      <Switch>
-        <Route path="/" component={HomePage} exact />
-
-        {/* all new routes should be added above */}
-        <Route component={NotFoundPage} />
-        <Redirect to="/" />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+        <Route path="techpaths" element={<TechPaths />} />
+        <Route path="Resources" element ={<ResourcesPage/>}/>
+      </Routes>
     </>
   );
 };

@@ -2,6 +2,13 @@
     "cSpell.words": [
         "browserslist",
         "fontawesome",
+<<<<<<< HEAD
         "fontsource"
+=======
+        "fontsource",
+        "fortawesome",
+        "reactstrap",
+        "testid"
+>>>>>>> origin/master
     ]
 }
