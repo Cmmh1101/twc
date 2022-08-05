@@ -7,15 +7,13 @@ import {
     TabPane,
 } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
-import TutorialsData from "../TutorialsData";
-import BooksData from "../BooksData";
-
+import TabData from "../TabData";
 
 
 const ResourcesNav = () =>{
 
     const [activeTab, setActiveTab] = useState('0');
-    const [resourceItem, setResource] = useState(TutorialsData[0]|| BooksData[0]);
+    const [resourceItem, setResource] = useState(TabData[0]);
 
     return (
         <div>
@@ -25,12 +23,12 @@ const ResourcesNav = () =>{
                 pills
                 className="flex-colum flex-md-row"
                 >
-                {TutorialsData.map(
+                {TabData.map(
                     data => (
                         <NavItem>
-                            <NavLink classname={activeTab === TutorialsData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
+                            <NavLink className={activeTab === TabData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
                                 {
-                                    const id = TutorialsData.indexOf(data).toString()
+                                    const id = TabData.indexOf(data).toString()
                                     setActiveTab(id)
                                 }
                                 setResource(data)
