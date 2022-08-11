@@ -31,9 +31,8 @@ const MemberCard = ({ name, title, link, bio, image }: Props) => {
       <CardBody className="cardBody">
         <CardTitle className="teamMember">{name}</CardTitle>
         <CardSubtitle className="jobTitle">{title}</CardSubtitle>
-        <CardText>{bio}</CardText>
-        <Button type="button">{link}</Button>
-        <Button className="BtnTeam">Read {name}'s story</Button>
+        <CardText>{bio.substring(0,60)}...</CardText>
+        <Button className="BtnTeam">Learn more</Button>
       </CardBody>
     </Card>
   );
