@@ -1,4 +1,4 @@
-import { CardDeck } from "reactstrap";
+import { CardDeck, Container, Col, Row } from "reactstrap";
 import MainHeader from "../../../utils/MainHeader";
 import MemberCard from "./MemberCard";
 
@@ -54,11 +54,13 @@ const MeetTeam = () => {
     },
   ];
   return (
-    <>
+    <Container>
+      <Row>
       <MainHeader headerText="Meet the Team" />
       <CardDeck>
         {member.map((member, i) => {
           return (
+            <Col xs={4} className="my-3">
             <MemberCard
               name={member.name}
               title={member.title}
@@ -66,10 +68,13 @@ const MeetTeam = () => {
               bio={member.bio}
               image={member.image}
             />
+            </Col>
           );
         })}
       </CardDeck>
-    </>
+      
+      </Row>
+    </Container>
   );
 };
 
