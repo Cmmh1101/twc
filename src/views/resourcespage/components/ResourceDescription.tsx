@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button, Card, CardBody, CardTitle, CardSubtitle, CardImg, Container, CardGroup } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
@@ -13,11 +14,10 @@ function ResourceDescription({...resourceItem }) {
                 <MainHeader headerText="Our JavaScript Favorites" />
             </Container>
             <Container xs={12} md={4}>
-
                 <CardGroup className="d-flex align-items-center justify-content-center flex-wrap mb-5">
-                    {TutorialsData.map((tutorial:any,i:any)=>{
+                    {TutorialsData.map((tutorial:any,id:any)=>{
                         return (
-                        <Card key={i} style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
+                        <Card key={tutorial.id} style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                         <CardImg
                             alt={tutorial.descriptionImageAltText}
                             src={tutorial.image}

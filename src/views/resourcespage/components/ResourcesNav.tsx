@@ -8,12 +8,15 @@ import {
 } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
 import TabData from "../TabData";
+import TestData from "../Test1";
+import TutorialsData from "../TutorialsData";
 
 
 const ResourcesNav = () =>{
 
     const [activeTab, setActiveTab] = useState('0');
-    const [resourceItem, setResource] = useState(TabData[0]);
+    const [resourceItem, setResource] = useState(TestData);
+    let tabcontent = TestData;
 
     return (
         <div>
@@ -26,16 +29,32 @@ const ResourcesNav = () =>{
                 {TabData.map(
                     data => (
                         <NavItem>
-                            <NavLink className={activeTab === TabData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
+                           <NavLink className={activeTab === TabData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
                                 {
                                     const id = TabData.indexOf(data).toString()
                                     setActiveTab(id)
+
+                                    switch (id) {
+                                        case '0': {
+                                             tabcontent = TestData;
+                                            break;
+                                        }
+                                        case '1': {
+                                            tabcontent = TutorialsData;
+                                           break;
+                                       }
+
+
+                                    }
+
                                 }
-                                setResource(data)
+                                setResource(tabcontent)
                             }}>
                             {data.titleEnglish}
                                 
-                            </NavLink>
+                            </NavLink> 
+                        
+
                         </NavItem>
                     )
                 )}    
