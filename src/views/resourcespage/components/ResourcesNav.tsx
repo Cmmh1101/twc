@@ -7,16 +7,14 @@ import {
     TabPane,
 } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
-import TabData from "../TabData";
-import TestData from "../Test1";
-import TutorialsData from "../TutorialsData";
+import ResourcesData from '../ResourcesData';
 
 
 const ResourcesNav = () =>{
 
     const [activeTab, setActiveTab] = useState('0');
-    const [resourceItem, setResource] = useState(TestData);
-    let tabcontent = TestData;
+    const [resourceData, setResourceTab] = useState(ResourcesData[0]);
+
 
     return (
         <div>
@@ -26,43 +24,27 @@ const ResourcesNav = () =>{
                 pills
                 className="flex-colum flex-md-row"
                 >
-                {TabData.map(
-                    data => (
-                        <NavItem>
-                           <NavLink className={activeTab === TabData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
-                                {
-                                    const id = TabData.indexOf(data).toString()
-                                    setActiveTab(id)
-
-                                    switch (id) {
-                                        case '0': {
-                                             tabcontent = TestData;
-                                            break;
-                                        }
-                                        case '1': {
-                                            tabcontent = TutorialsData;
-                                           break;
-                                       }
-
-
-                                    }
-
-                                }
-                                setResource(tabcontent)
-                            }}>
+            {ResourcesData.map(
+                data => (
+                    <NavItem>
+                        <NavLink className={ activeTab === ResourcesData.indexOf(data).toString() ? 'active' : ''} onClick={()=> {
+                            {
+                                const id = ResourcesData.indexOf(data).toString()
+                                setActiveTab(id)
+                            }
+                            setResourceTab(data)
+                        }}>
                             {data.titleEnglish}
-                                
-                            </NavLink> 
-                        
-
-                        </NavItem>
-                    )
-                )}    
+                        </NavLink>
+                    </NavItem>
+                )
+            )}
+               
             </Nav>
       
             <TabContent activeTab={activeTab}>
                 <TabPane tabId={activeTab.toString()}>
-                    <ResourceDescription {...resourceItem}/>
+                    <ResourceDescription {...resourceData} />
                 </TabPane>
             </TabContent>
 
