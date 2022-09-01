@@ -1,0 +1,54 @@
+
+    const category_a = "UX/UI";
+    category_b = "Front End";
+    category_c = "Back End";
+    category_d = "Data Science";
+    category_e = "Project Management";
+
+    type Props =
+        {
+            category_a: string;
+            category_b: string;
+            category_c: string;
+            category_d:string;
+            category_e: string; 
+    }
+
+const showResults = () =>{
+
+While (questionNr =< 10) { 
+let answerA= 0;
+let answerB= 0;
+let answerC= 0;
+let answerD= 0;
+let answerE= 0; 
+
+if (userAnswer?.answer===a)
+    {answerA += 1}
+else if (userAnswer?.answer===b)
+    {answerB += 1}
+else if (userAnswer?.answer===c)
+    {answerC += 1}
+else if (userAnswer?.answer===d)
+    {answerD +=1}
+else if (userAnswer?.answer===e)
+   {answerE += 1}
+}
+
+
+if (answerA > answerB and answerA > answerC and answerA > answerD and answerA > answerE)
+{console.log(`Your are best suited for a career in ${category_a}`)}
+
+else if (answerB > answerA and answerB > answerC and answerB > category_d and category_b > answerE)
+{console.log(`Your are best suited for a career in ${category_b}`)}
+
+else if (answerC > answerA and answerC > answerB and answerC > category_d and answerC > answerE)
+{`console.log("Your are best suited for a career in ${category_c}`)}
+
+else if (answerD > answerA and answerD > answerB and answerD > answerC and answerD > answerE)
+{console.log(`Your are best suited for a career in ${category_d}`)}
+
+else 
+{console.log(`Your are best suited for a career in ${category_e}`)}
+
+}
