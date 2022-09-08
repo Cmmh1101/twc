@@ -72,7 +72,7 @@ const TopNavbar = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="/blogspage">
                 Blog
               </NavLink>
             </NavItem>
