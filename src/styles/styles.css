@@ -274,3 +274,11 @@ hr.solid {
   width: max-content;
   color: #3956f9;
 }
+
+/*Resources*/
+.resources-title {
+  margin: 0 auto;
+  position: relative;
+  width: max-content;
+  color: #3956f9;
+}

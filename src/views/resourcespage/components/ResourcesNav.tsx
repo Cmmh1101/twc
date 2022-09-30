@@ -7,14 +7,14 @@ import {
     TabPane,
 } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
-import ResourceData from "../../resourcespage/ResourceData";
-
+import ResourcesData from '../ResourcesData';
 
 
 const ResourcesNav = () =>{
 
     const [activeTab, setActiveTab] = useState('0');
-    const [resourceItem, setResource] = useState(ResourceData[0]);
+    const [resourceData, setResourceTab] = useState(ResourcesData[0]);
+
 
     return (
         <div>
@@ -24,27 +24,27 @@ const ResourcesNav = () =>{
                 pills
                 className="flex-colum flex-md-row"
                 >
-                {ResourceData.map(
-                    data => (
-                        <NavItem>
-                            <NavLink classname={activeTab === ResourceData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
-                                {
-                                    const id = ResourceData.indexOf(data).toString()
-                                    setActiveTab(id)
-                                }
-                                setResource(data)
-                            }}>
+            {ResourcesData.map(
+                data => (
+                    <NavItem>
+                        <NavLink className={ activeTab === ResourcesData.indexOf(data).toString() ? 'active' : ''} onClick={()=> {
+                            {
+                                const id = ResourcesData.indexOf(data).toString()
+                                setActiveTab(id)
+                            }
+                            setResourceTab(data)
+                        }}>
                             {data.titleEnglish}
-                                
-                            </NavLink>
-                        </NavItem>
-                    )
-                )}    
+                        </NavLink>
+                    </NavItem>
+                )
+            )}
+               
             </Nav>
       
             <TabContent activeTab={activeTab}>
                 <TabPane tabId={activeTab.toString()}>
-                    <ResourceDescription {...resourceItem}/>
+                    <ResourceDescription {...resourceData} />
                 </TabPane>
             </TabContent>
 
