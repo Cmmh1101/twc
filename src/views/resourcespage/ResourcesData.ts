@@ -1,4 +1,5 @@
 
+
 const ResourcesData =
 [
     {
@@ -6,8 +7,11 @@ const ResourcesData =
         titleSpanish: "Libros",
         resourceDescriptionEnglish: "This is the general Book description",
         resourceDescriptionSpanish: "Esta es la descripción general de Libros",
-        descriptionImage: "https://picsum.photos/318/180",
+        descriptionImage: require('./images/resource_books.png'), 
         descriptiomImageAltText: "libros",
+        book1Image: require('./images/Eloquent_JS.JPG'),
+        book2Image: require('./images/Cleancode.JPG'),
+        book3Image: require('./images/Refractoring.JPG'),
         detailsEnglish: "This is book 1 details",
         detailsSpanish: "Detalles del libro 1",
         detailsEnglish2: "This is book 2 details",
