@@ -219,6 +219,18 @@ hr.solid {
   max-height: 280px;
   width: auto;
   max-width: 250px;
+  filter: grayscale(100);
+  -webkit-transition: all .8s ease-in-out; 
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.card-image:hover {
+
+  -webkit-filter: grayscale(0);
+  filter: none;
+  transform: scale(1.06);
 }
 /* responsive styles */
 
