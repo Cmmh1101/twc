@@ -10,7 +10,7 @@ const ResourcesData =
         descriptionImage: require('./images/resource_books.png'), 
         descriptiomImageAltText: "libros",
         book1Image: require('./images/Eloquent_JS.JPG'),
-        book2Image: require('./images/Cleancode.JPG'),
+        book2Image: require('./images/Definitive_Guide.JPG'),
         book3Image: require('./images/Refractoring.JPG'),
         detailsEnglish: "This is book 1 details",
         detailsSpanish: "Detalles del libro 1",

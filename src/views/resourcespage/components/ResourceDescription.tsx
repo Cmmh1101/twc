@@ -71,7 +71,7 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.book1Image}
                                 alt={resourceData.descriptionImageAltText}
-                                top width="100%"
+                                
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle
@@ -102,7 +102,7 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.book2Image}
                                 alt={resourceData.descriptionImageAltText}
-                                top width="100%"
+                               
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle
@@ -133,7 +133,7 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.book3Image}
                                 alt={resourceData.descriptionImageAltText}
-                                top width="100%"
+                              
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle
