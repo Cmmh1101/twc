@@ -42,7 +42,7 @@ function ResourceDescription ({...resourceData}){
                                 />
                             </div>
                         </Col>
-                        <Col xs={12} md={12} className="mt-4 px-5">
+                        <Col xs={12} md={12} className="resource-text">
                             {englishMode ? (
                                 <>
                                     <p> {resourceData.resourceDescriptionEnglish} </p>

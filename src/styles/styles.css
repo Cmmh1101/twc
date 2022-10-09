@@ -232,6 +232,13 @@ hr.solid {
   filter: none;
   transform: scale(1.06);
 }
+
+.resource-text{
+  margin-top: 10px;
+  
+
+
+}
 /* responsive styles */
 
 @media only screen and (max-width: 600px) {

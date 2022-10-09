@@ -66,10 +66,7 @@ const TopNavbar = () => {
                 <NavLink href="/resources">Resources</NavLink>
               </NavItem>
 
-              <DropdownMenu>
-                <DropdownItem>Resource 1</DropdownItem>
-                <DropdownItem>Resource 2</DropdownItem>
-              </DropdownMenu>
+
             </UncontrolledDropdown>
             <NavItem className="px-3">
               <NavLink href="/blogspage">
