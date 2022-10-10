@@ -69,7 +69,7 @@ function ResourceDescription ({...resourceData}){
                         <CardGroup className="d-flex align-items-center justify-content-center flex-wrap mb-5">
                             <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                             <CardImg
-                                src={resourceData.book1Image}
+                                src={resourceData.image}
                                 alt={resourceData.descriptionImageAltText}
                                 
                                 className="card-image"/>
@@ -100,7 +100,7 @@ function ResourceDescription ({...resourceData}){
                     </Card>
                     <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                             <CardImg
-                                src={resourceData.book2Image}
+                                src={resourceData.image2}
                                 alt={resourceData.descriptionImageAltText}
                                
                                 className="card-image"/>
@@ -131,7 +131,7 @@ function ResourceDescription ({...resourceData}){
                     </Card>
                     <Card style={{ border: "none" }} className="mt-4 mt-md-0 mx-0 px-3">
                             <CardImg
-                                src={resourceData.book3Image}
+                                src={resourceData.image3}
                                 alt={resourceData.descriptionImageAltText}
                               
                                 className="card-image"/>
