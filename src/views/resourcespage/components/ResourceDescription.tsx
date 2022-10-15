@@ -82,7 +82,7 @@ function ResourceDescription ({...resourceData}){
                                     </>
                                 ) : (
                                     <>
-                                        <p> {resourceData.detailsSpanish?.substring(0,60)} </p>
+                                        <p> {resourceData.detailsSpanish?.substring(0,60)}... </p>
                                     </>
                                 )}
 

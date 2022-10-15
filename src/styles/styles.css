@@ -239,7 +239,7 @@ hr.solid {
 .resource-text{
   margin-top: 10px;
   margin-left: 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 /* responsive styles */
