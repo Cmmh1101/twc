@@ -34,7 +34,7 @@ function ResourceDescription ({...resourceData}){
                         xs={12}
                         className="d-flex align-items-center justify-content-center flex-wrap mb-5"
                     >
-                        <Col xs={12} md={12} className="px-0">
+                        <Col xs={12} md={6} className="px-0">
                             <div className="intro-img">
                                 <img
                                     src={resourceData.descriptionImage}
@@ -42,7 +42,7 @@ function ResourceDescription ({...resourceData}){
                                 />
                             </div>
                         </Col>
-                        <Col xs={12} md={12} className="resource-text">
+                        <Col xs={12} md={4} className="resource-text">
                             {englishMode ? (
                                 <>
                                     <p> {resourceData.resourceDescriptionEnglish} </p>
@@ -71,7 +71,6 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.image}
                                 alt={resourceData.descriptionImageAltText}
-                                
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle
@@ -102,7 +101,6 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.image2}
                                 alt={resourceData.descriptionImageAltText}
-                               
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle
@@ -133,7 +131,6 @@ function ResourceDescription ({...resourceData}){
                             <CardImg
                                 src={resourceData.image3}
                                 alt={resourceData.descriptionImageAltText}
-                              
                                 className="card-image"/>
                             <CardBody>
                             <CardSubtitle

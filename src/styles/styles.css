@@ -238,10 +238,10 @@ hr.solid {
 
 .resource-text{
   margin-top: 10px;
-  
-
-
+  margin-left: 30px;
+  text-align: justify;
 }
+
 /* responsive styles */
 
 @media only screen and (max-width: 600px) {
