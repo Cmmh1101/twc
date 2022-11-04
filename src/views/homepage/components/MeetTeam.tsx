@@ -16,7 +16,7 @@ const MeetTeam = () => {
       name: "Marilyn",
       title: "Software Engineer",
       link: "",
-      bio: "Marilyn’s journey in coding began with a community college course on HTML that slowly became an obsession. After years of working in education and playing around with HTML, CSS, and JavaScript she enrolled in a coding Bootcamp and became fell in love with Python programming. She is now pursuing a career in Back End development.",
+      bio: "Marilyn's journey in coding began with a community college course on HTML that slowly became an obsession. After years of working in education and playing around with HTML, CSS, and JavaScript she enrolled in a coding Bootcamp and became fell in love with Python programming. She is now pursuing a career in Back End development.",
       portfolio: "",
       image: "",
     },
@@ -54,25 +54,24 @@ const MeetTeam = () => {
     },
   ];
   return (
-    <Container>
+    <Container className="meet-team">
       <Row>
-      <MainHeader headerText="Meet the Team" />
-      <CardDeck>
-        {member.map((member, i) => {
-          return (
-            <Col xs={4} className="my-3">
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              link={member.link}
-              bio={member.bio}
-              image={member.image}
-            />
-            </Col>
-          );
-        })}
-      </CardDeck>
-      
+        <MainHeader headerText="Meet the Team" />
+        <CardDeck>
+          {member.map((member, i) => {
+            return (
+              <Col xs={4} className="my-3" key={i}>
+                <MemberCard
+                  name={member.name}
+                  title={member.title}
+                  link={member.link}
+                  bio={member.bio}
+                  image={member.image}
+                />
+              </Col>
+            );
+          })}
+        </CardDeck>
       </Row>
     </Container>
   );
