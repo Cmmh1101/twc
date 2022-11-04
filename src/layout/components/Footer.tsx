@@ -2,8 +2,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Col, Container, Nav, NavItem, Row } from "reactstrap";
-import ToggleLangButton from "./ToggleLangButton";
-import ToggleModeButton from "./ToggleModeButton";
 
 const Footer = () => {
   return (
@@ -27,7 +25,7 @@ const Footer = () => {
                   className={({ isActive }) =>
                     isActive ? "active" : "nav-links"
                   }
-                  to="/techpaths"
+                  to="/techPaths"
                 >
                   Paths
                 </NavLink>
@@ -47,7 +45,7 @@ const Footer = () => {
                   className={({ isActive }) =>
                     isActive ? "active" : "nav-links"
                   }
-                  to="/blogspage"
+                  to="/blog"
                 >
                   Blog
                 </NavLink>
