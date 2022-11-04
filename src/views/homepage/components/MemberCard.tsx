@@ -13,11 +13,17 @@ interface Props {
 const MemberCard = ({ name, title, link, bio, image, portfolio }: Props) => {
   return (
     <Card className="teamCard">
-      <CardImg top src={image} className="team-img" alt="Card image cap" />
-      <CardBody className="cardBody">
+      <CardImg
+        top
+        src={image}
+        style={{ width: "60%", margin: "0 auto" }}
+        className="team-img"
+        alt="Card image cap"
+      />
+      <CardBody className="cardBody text-center">
         <h4 className="teamMember">{name}</h4>
         <h5 className="jobTitle">{title}</h5>
-        {/* <CardText>{bio.substring(0, 60)}...</CardText> */}
+        <hr style={{ width: "50%", margin: "0 auto 1rem" }} />
         <CardText>{bio}</CardText>
         <div className="d-flex justify-content-around">
           <a href={portfolio} target="_blank" rel="noreferrer">
@@ -27,7 +33,6 @@ const MemberCard = ({ name, title, link, bio, image, portfolio }: Props) => {
             <FaLinkedin className="socialIcon" size="2em" />
           </a>
         </div>
-        {/* <a className="resources-button mb-5 mb-md-0">Read Story</a> */}
       </CardBody>
     </Card>
   );

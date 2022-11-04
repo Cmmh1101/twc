@@ -24,7 +24,7 @@ const MeetTeam = () => {
       name: "Carla",
       title: "Software Engineer",
       link: "",
-      bio: "Carla's journey into programming began by the need of a career change. What starter with a mini tutorial scaled up into a bootcamp and a career change story from a teacher to now a software engineer at Green Mountain Technology, enjoying the process of continuous development and the awesome community around",
+      bio: "Carla's journey into programming began by the need of a career change. What starter with a mini tutorial scaled up into a bootcamp and a career change story from a teacher to now a software engineer at Green Mountain Technology, enjoying the process of continuous development and the awesome developer community and friends around",
       portfolio: "https://carlamontano.tech",
       image: "../images/members/pic-carla.png",
     },
