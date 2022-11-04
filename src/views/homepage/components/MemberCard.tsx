@@ -18,7 +18,7 @@ const MemberCard = ({ name, title, link, bio, image, portfolio }: Props) => {
         src={image}
         style={{ width: "60%", margin: "0 auto" }}
         className="team-img"
-        alt="Card image cap"
+        alt={name}
       />
       <CardBody className="cardBody text-center">
         <h4 className="teamMember">{name}</h4>
