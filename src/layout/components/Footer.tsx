@@ -97,13 +97,13 @@ const Footer = () => {
             </Col>
             <Col md={4} xs={12} className="mt-4">
               <h4 className="footer-title"> Follow Us </h4>
-              <ul className="list-unstyled d-flex justify-content-center">
-                <li>
+              <ul className="list-unstyled d-flex justify-content-around">
+                <a href="/">
                   <FaYoutube className="socialIcon" size="2em" />
-                </li>
-                <li>
+                </a>
+                <a href="/">
                   <FaLinkedin className="socialIcon" size="2em" />
-                </li>
+                </a>
               </ul>
             </Col>
           </Col>
