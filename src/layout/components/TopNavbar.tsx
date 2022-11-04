@@ -48,11 +48,11 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink href="/">Home</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar className="dropdown">
-              <NavItem className="px-3">
-                <NavLink href="/techpaths">Paths</NavLink>
-              </NavItem>
-              <DropdownMenu>
+            {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
+            <NavItem className="px-3">
+              <NavLink href="/techpaths">Paths</NavLink>
+            </NavItem>
+            {/* <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
                 <DropdownItem>Path 2</DropdownItem>
                 <DropdownItem>Path 3</DropdownItem>
@@ -60,21 +60,19 @@ const TopNavbar = () => {
                 <DropdownItem>Path 5</DropdownItem>
                 <DropdownItem>Path 6</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
-            <UncontrolledDropdown nav inNavbar className="dropdown">
-              <NavItem className="px-3">
-                <NavLink href="/resources">Resources</NavLink>
-              </NavItem>
-
+            </UncontrolledDropdown> */}
+            {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
+            <NavItem className="px-3">
+              <NavLink href="/resources">Resources</NavLink>
+            </NavItem>
+            {/* 
               <DropdownMenu>
                 <DropdownItem>Resource 1</DropdownItem>
                 <DropdownItem>Resource 2</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+              </DropdownMenu> */}
+            {/* </UncontrolledDropdown> */}
             <NavItem className="px-3">
-              <NavLink href="/blogspage">
-                Blog
-              </NavLink>
+              <NavLink href="/blogspage">Blog</NavLink>
             </NavItem>
             <NavItem className="px-3">
               <NavLink href="https://github.com/reactstrap/reactstrap">
