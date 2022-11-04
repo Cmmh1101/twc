@@ -8,10 +8,10 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
   Container,
 } from "reactstrap";
 import ToggleLangButton from "./ToggleLangButton";
@@ -38,7 +38,7 @@ const TopNavbar = () => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto text-xs-center" navbar>
             <NavItem className="my-auto">
               <ToggleModeButton />
             </NavItem>
@@ -46,11 +46,15 @@ const TopNavbar = () => {
               <ToggleLangButton />
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="/">Home</NavLink>
+              <NavLink className="nav-links" href="/">
+                Home
+              </NavLink>
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
             <NavItem className="px-3">
-              <NavLink href="/techpaths">Paths</NavLink>
+              <NavLink className="nav-links" href="/techpaths">
+                Paths
+              </NavLink>
             </NavItem>
             {/* <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
@@ -63,7 +67,9 @@ const TopNavbar = () => {
             </UncontrolledDropdown> */}
             {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
             <NavItem className="px-3">
-              <NavLink href="/resources">Resources</NavLink>
+              <NavLink className="nav-links" href="/resources">
+                Resources
+              </NavLink>
             </NavItem>
             {/* 
               <DropdownMenu>
@@ -72,15 +78,23 @@ const TopNavbar = () => {
               </DropdownMenu> */}
             {/* </UncontrolledDropdown> */}
             <NavItem className="px-3">
-              <NavLink href="/blogspage">Blog</NavLink>
+              <NavLink className="nav-links" href="/blogspage">
+                Blog
+              </NavLink>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink
+                className="nav-links"
+                href="https://github.com/reactstrap/reactstrap"
+              >
                 FAQ
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink
+                className="nav-links"
+                href="https://github.com/reactstrap/reactstrap"
+              >
                 Contact
               </NavLink>
             </NavItem>
