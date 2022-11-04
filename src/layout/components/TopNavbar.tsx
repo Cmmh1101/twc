@@ -8,10 +8,10 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
   Container,
 } from "reactstrap";
 import ToggleLangButton from "./ToggleLangButton";
@@ -38,21 +38,28 @@ const TopNavbar = () => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem className="my-auto">
-              <ToggleModeButton />
-            </NavItem>
-            <NavItem className="my-auto">
-              <ToggleLangButton />
-            </NavItem>
-            <NavItem className="px-3">
-              <NavLink href="/">Home</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar className="dropdown">
-              <NavItem className="px-3">
-                <NavLink href="/techpaths">Paths</NavLink>
+          <Nav className="ml-auto text-xs-center" navbar>
+            <div className="toggle-btns">
+              <NavItem className="my-auto">
+                <ToggleModeButton />
               </NavItem>
-              <DropdownMenu>
+              <NavItem className="my-auto">
+                <ToggleLangButton />
+              </NavItem>
+            </div>
+
+            <NavItem className="px-3">
+              <NavLink className="nav-links" href="/">
+                Home
+              </NavLink>
+            </NavItem>
+            {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
+            <NavItem className="px-3">
+              <NavLink className="nav-links" href="/techpaths">
+                Paths
+              </NavLink>
+            </NavItem>
+            {/* <DropdownMenu>
                 <DropdownItem>Path 1</DropdownItem>
                 <DropdownItem>Path 2</DropdownItem>
                 <DropdownItem>Path 3</DropdownItem>
@@ -60,29 +67,37 @@ const TopNavbar = () => {
                 <DropdownItem>Path 5</DropdownItem>
                 <DropdownItem>Path 6</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
-            <UncontrolledDropdown nav inNavbar className="dropdown">
-              <NavItem className="px-3">
-                <NavLink href="/resources">Resources</NavLink>
-              </NavItem>
-
+            </UncontrolledDropdown> */}
+            {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
+            <NavItem className="px-3">
+              <NavLink className="nav-links" href="/resources">
+                Resources
+              </NavLink>
+            </NavItem>
+            {/* 
               <DropdownMenu>
                 <DropdownItem>Resource 1</DropdownItem>
                 <DropdownItem>Resource 2</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+              </DropdownMenu> */}
+            {/* </UncontrolledDropdown> */}
             <NavItem className="px-3">
-              <NavLink href="/blogspage">
+              <NavLink className="nav-links" href="/blogspage">
                 Blog
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink
+                className="nav-links"
+                href="https://github.com/reactstrap/reactstrap"
+              >
                 FAQ
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink
+                className="nav-links"
+                href="https://github.com/reactstrap/reactstrap"
+              >
                 Contact
               </NavLink>
             </NavItem>
