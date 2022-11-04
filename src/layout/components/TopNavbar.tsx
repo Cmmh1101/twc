@@ -7,10 +7,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
   Container,
 } from "reactstrap";
 import ToggleLangButton from "./ToggleLangButton";
@@ -25,7 +21,7 @@ const TopNavbar = () => {
 
   return (
     <Navbar tag="nav" fixed="top" className="navbar shadow" dark expand="md">
-      <Container>
+      <Container fluid style={{ padding: "0 10%" }}>
         <NavbarBrand className="mr-auto" href="/">
           <img
             src="/logo.png"
@@ -46,7 +42,6 @@ const TopNavbar = () => {
                 <ToggleLangButton />
               </NavItem>
             </div>
-
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
@@ -68,16 +63,6 @@ const TopNavbar = () => {
                 Paths
               </NavLink>
             </NavItem>
-            {/* <DropdownMenu>
-                <DropdownItem>Path 1</DropdownItem>
-                <DropdownItem>Path 2</DropdownItem>
-                <DropdownItem>Path 3</DropdownItem>
-                <DropdownItem>Path 4</DropdownItem>
-                <DropdownItem>Path 5</DropdownItem>
-                <DropdownItem>Path 6</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
-            {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
@@ -88,12 +73,6 @@ const TopNavbar = () => {
                 Resources
               </NavLink>
             </NavItem>
-            {/* 
-              <DropdownMenu>
-                <DropdownItem>Resource 1</DropdownItem>
-                <DropdownItem>Resource 2</DropdownItem>
-              </DropdownMenu> */}
-            {/* </UncontrolledDropdown> */}
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>

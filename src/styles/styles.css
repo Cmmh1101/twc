@@ -186,7 +186,7 @@ hr.solid {
   align-items: center;
 }
 
-nav .nav-links {
+.nav-links {
   background-color: rgb(23, 23, 24);
   color: #fff !important;
   transition: var(--transition);
