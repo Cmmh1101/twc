@@ -1,5 +1,3 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Col, Container, Row } from "reactstrap";
@@ -38,10 +36,11 @@ const Footer = () => {
 
           <Col md={4} xs={12} className="mt-4">
             <h4 className="footer-title"> Follow Us </h4>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled d-flex justify-content-center">
               <li>
                 <FaYoutube className="socialIcon" size="2em" />
-                <FaGithub className="socialIcon" size="2em" />
+              </li>
+              <li>
                 <FaLinkedin className="socialIcon" size="2em" />
               </li>
             </ul>
