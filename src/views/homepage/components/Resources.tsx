@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Col, Container, Row } from "reactstrap";
+import { Link } from "react-router-dom";
+import { Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
@@ -20,18 +21,22 @@ const Resources = () => {
                 transition. We are compiling a series of resources that have
                 been useful for teachers transitioning into tech.
               </p>
-              <ul className="pl-3">
+              <ul className="pl-3 mb-5">
                 <li>Tutorials</li>
                 <li>Cources</li>
                 <li>Podcasts</li>
                 <li>Books</li>
               </ul>
-              <Button className="resources-button mb-5 mb-md-0">
+              <Link
+                to="/resources"
+                className="resources-button mb-5 mb-md-0 px-3 py-2 text-light"
+              >
                 Find resources
-              </Button>
+              </Link>
             </Col>
+
             <Col xs={12} md={6} className="px-0">
-              <div className="intro-img">
+              <div className="intro-img mt-5 mt-md-0">
                 <img
                   src="https://images.pexels.com/photos/8500286/pexels-photo-8500286.jpeg?cs=srgb&dl=pexels-rodnae-productions-8500286.jpg&fm=jpg"
                   alt="Library"
