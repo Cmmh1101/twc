@@ -1,4 +1,4 @@
-import { ReactNode, useContext, useState } from "react";
+import { ReactNode, useContext, useEffect, useState } from "react";
 import { ThemeModeContext } from "./ThemeModeContext";
 
 function useTheme() {
@@ -10,8 +10,17 @@ function useTheme() {
 }
 
 const ThemeModeProvider = (props: { children: ReactNode }) => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [englishMode, setEnglishMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    const initialValue = JSON.parse(saved!);
+    // change to true if you want to have initial load on darkmode
+    return initialValue === null ? false : initialValue;
+  });
+  const [englishMode, setEnglishMode] = useState(() => {
+    const saved = localStorage.getItem("englishMode");
+    const initialValue = JSON.parse(saved!);
+    return initialValue;
+  });
 
   const handleToggleLanguage = () => {
     setEnglishMode(!englishMode);
@@ -33,6 +42,11 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
       background: "#222222",
     },
   };
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+    localStorage.setItem("englishMode", JSON.stringify(englishMode));
+  }, [darkMode, englishMode]);
 
   return (
     <ThemeModeContext.Provider
