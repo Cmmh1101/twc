@@ -9,10 +9,7 @@ const Resources = () => {
     <section className="resources-box py-5">
       <Container>
         <Row>
-          <MainHeader
-            headerText={englishMode ? "Recursos" : "Resources"}
-            customClass="text-light"
-          />
+          <MainHeader headerText={englishMode ? "Recursos" : "Resources"} />
           <Col
             xs={12}
             className="d-flex align-items-center justify-content-center flex-wrap mb-5"
