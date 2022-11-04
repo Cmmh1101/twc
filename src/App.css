@@ -29,6 +29,13 @@ h6 {
   color: var(--dark-color);
 } */
 
+.toggle-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
 .theme-btn {
   outline: none;
   border: none;
@@ -36,10 +43,38 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 2px 4px;
 }
 
 .lang-btn {
   width: 22px;
   height: 22px;
+}
+
+/* =============================== responsive ======================== */
+
+@media only screen and (max-width: 767px) {
+  .toggle-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .theme-btn {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    margin: 1rem;
+  }
+
+  .lang-btn {
+    width: 22px;
+    height: 22px;
+    margin: 1rem;
+  }
 }

@@ -39,12 +39,15 @@ const TopNavbar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto text-xs-center" navbar>
-            <NavItem className="my-auto">
-              <ToggleModeButton />
-            </NavItem>
-            <NavItem className="my-auto">
-              <ToggleLangButton />
-            </NavItem>
+            <div className="toggle-btns">
+              <NavItem className="my-auto">
+                <ToggleModeButton />
+              </NavItem>
+              <NavItem className="my-auto">
+                <ToggleLangButton />
+              </NavItem>
+            </div>
+
             <NavItem className="px-3">
               <NavLink className="nav-links" href="/">
                 Home

@@ -180,22 +180,20 @@ hr.solid {
   background-color: rgb(23, 23, 24);
   color: #fff;
 }
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
 .navbar a {
   background-color: rgb(23, 23, 24);
   color: #fff !important;
+  transition: var(--transition);
 }
 .navbar .nav-links:hover {
   color: var(--blue) !important;
   transform: scale(1.2);
 }
-
-/* .navbar img {
-  transition: var(--transition);
-} */
-
-/* .navbar img:hover {
-  transform: scale(1.02);
-} */
 
 /*Resources*/
 
@@ -286,8 +284,11 @@ hr.solid {
     width: 50px;
   }
 
+  .nav-item {
+    justify-content: center;
+  }
+
   nav .nav-links {
-    text-align: center;
     margin-bottom: 2rem;
     padding: 10px 0;
   }
