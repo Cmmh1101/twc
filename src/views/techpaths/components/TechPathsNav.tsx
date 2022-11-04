@@ -1,58 +1,46 @@
 import React, { useState } from "react";
-import {
-    Nav,
-    NavItem,
-    NavLink,
-    TabContent,
-    TabPane,
-} from "reactstrap";
+import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import RoleDescription from "../components/RoleDescription";
 import TechPathsData from "../TechPathsData";
 
-
-
-
 const TechPathsNav = () => {
+  const [activeTab, setActiveTab] = useState("0");
+  const [techPath, setTechPath] = useState(TechPathsData[0]);
 
-    const [activeTab, setActiveTab] = useState('0');
-    const [techPath, setTechPath] = useState(TechPathsData[0]);
-
-    return (
-        <div>
-            <Nav
-                tabs
-                justified
-                pills
-                className="flex-column flex-md-row"
+  return (
+    <div>
+      <Nav tabs justified pills className="flex-column flex-md-row">
+        {TechPathsData.map((data, i) => (
+          <NavItem key={i}>
+            <NavLink
+              className={
+                activeTab === TechPathsData.indexOf(data).toString()
+                  ? "active"
+                  : ""
+              }
+              onClick={() => {
+                {
+                  const id = TechPathsData.indexOf(data).toString();
+                  setActiveTab(id);
+                }
+                setTechPath(data);
+              }}
             >
-                {TechPathsData.map(
-                    data => (
-                        <NavItem>
-                            <NavLink className={activeTab === TechPathsData.indexOf(data).toString() ? 'active' : ''} onClick={() => {
-                                {
-                                    const id = TechPathsData.indexOf(data).toString()
-                                    setActiveTab(id)
-                                }
-                                setTechPath(data)
-                            }}>
-                                {data.titleEnglish}
-                            </NavLink>
-                        </NavItem>
-                    )
-                )}
-            </Nav>
-            <TabContent activeTab={activeTab}>
-                <TabPane tabId={activeTab.toString()}>
-                    <RoleDescription {...techPath} />
-                </TabPane>
-            </TabContent>
-        </div >
-    );
-}
+              {data.titleEnglish}
+            </NavLink>
+          </NavItem>
+        ))}
+      </Nav>
+      <TabContent activeTab={activeTab}>
+        <TabPane tabId={activeTab.toString()}>
+          <RoleDescription {...techPath} />
+        </TabPane>
+      </TabContent>
+    </div>
+  );
+};
 
 export default TechPathsNav;
-
-
 
 // return (
 //     <div>
