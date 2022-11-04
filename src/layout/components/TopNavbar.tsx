@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -7,7 +7,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   // UncontrolledDropdown,
   // DropdownToggle,
   // DropdownMenu,
@@ -49,13 +48,23 @@ const TopNavbar = () => {
             </div>
 
             <NavItem className="px-3">
-              <NavLink className="nav-links" href="/">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/"
+              >
                 Home
               </NavLink>
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
             <NavItem className="px-3">
-              <NavLink className="nav-links" href="/techpaths">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/techpaths"
+              >
                 Paths
               </NavLink>
             </NavItem>
@@ -70,7 +79,12 @@ const TopNavbar = () => {
             </UncontrolledDropdown> */}
             {/* <UncontrolledDropdown nav inNavbar className="dropdown"> */}
             <NavItem className="px-3">
-              <NavLink className="nav-links" href="/resources">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/resources"
+              >
                 Resources
               </NavLink>
             </NavItem>
@@ -81,22 +95,31 @@ const TopNavbar = () => {
               </DropdownMenu> */}
             {/* </UncontrolledDropdown> */}
             <NavItem className="px-3">
-              <NavLink className="nav-links" href="/blogspage">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/blogspage"
+              >
                 Blog
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
               <NavLink
-                className="nav-links"
-                href="https://github.com/reactstrap/reactstrap"
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/fqa"
               >
                 FAQ
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
               <NavLink
-                className="nav-links"
-                href="https://github.com/reactstrap/reactstrap"
+                className={({ isActive }) =>
+                  isActive ? "active" : "nav-links"
+                }
+                to="/contact"
               >
                 Contact
               </NavLink>

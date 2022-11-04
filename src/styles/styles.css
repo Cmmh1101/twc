@@ -10,8 +10,8 @@ hr.solid {
 /* hero */
 
 .title {
-  background-color: var(--dark-color) !important;
-  color: #f0ffff;
+  background-color: transparent !important;
+  /* color: #f0ffff; */
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
   padding-left: 10rem;
@@ -27,7 +27,7 @@ hr.solid {
   margin: 0 auto;
   position: relative;
   width: max-content;
-  color: azure;
+  /* color: azure; */
 }
 
 .display-3::before,
@@ -41,9 +41,9 @@ hr.solid {
   animation: typewriter 5s steps(18) 1s forwards;
 }
 
-.display-3::before {
+/* .display-3::before {
   background: var(--dark-color);
-}
+} */
 
 @keyframes typewriter {
   to {
@@ -185,12 +185,19 @@ hr.solid {
   align-items: center;
 }
 
-.navbar a {
+nav .nav-links {
   background-color: rgb(23, 23, 24);
   color: #fff !important;
   transition: var(--transition);
 }
-.navbar .nav-links:hover {
+nav .active {
+  background-color: rgb(23, 23, 24);
+  color: var(--blue) !important;
+  transform: scale(1.2);
+}
+nav .nav-links:hover,
+nav .nav-links:active,
+nav .nav-links:focus {
   color: var(--blue) !important;
   transform: scale(1.2);
 }
@@ -198,8 +205,8 @@ hr.solid {
 /*Resources*/
 
 .resources-box {
-  background-color: var(--dark-color);
-  color: var(--white);
+  /* background-color: var(--dark-color); */
+  /* color: var(--white); */
   height: auto;
 }
 
@@ -223,10 +230,10 @@ hr.solid {
   color: #f0ffff;
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
-  padding-left: 10rem;
-  position: relative;
+  padding: 4rem 0;
+  /* position: relative; */
   text-align: center;
-  height: 60vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +256,7 @@ hr.solid {
   margin: 0 auto;
   position: relative;
   width: max-content;
-  color: azure;
+  /* color: azure; */
 }
 
 /*Tech Paths*/
@@ -267,6 +274,18 @@ hr.solid {
   width: max-content;
   color: #3956f9;
 }
+
+.meet-team {
+  padding-bottom: 8rem;
+}
+
+.teamCard {
+  background-color: transparent !important;
+  border: none !important;
+}
+/* .team-img {
+  height: 350px;
+} */
 
 /* responsive styles */
 
