@@ -20,18 +20,12 @@ interface Props {
 const MemberCard = ({ name, title, link, bio, image }: Props) => {
   return (
     <Card className="teamCard">
-      <CardImg
-        top
-        width="100%"
-        src={image}
-        className="pict"
-        alt="Card image cap"
-      />
+      <CardImg top src={image} className="team-img" alt="Card image cap" />
       <CardBody className="cardBody">
-        <h3 className="teamMember">{name}</h3>
-        <CardSubtitle className="jobTitle">{title}</CardSubtitle>
+        <h4 className="teamMember">{name}</h4>
+        <h5 className="jobTitle">{title}</h5>
         <CardText>{bio.substring(0, 60)}...</CardText>
-        <Button className="resources-button mb-5 mb-md-0">Learn more</Button>
+        <Button className="resources-button mb-5 mb-md-0">Read Story</Button>
       </CardBody>
     </Card>
   );
