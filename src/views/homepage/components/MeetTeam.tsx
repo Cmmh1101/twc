@@ -5,7 +5,7 @@ import MemberCard from "./MemberCard";
 const MeetTeam = () => {
   const member = [
     {
-      name: "Clara",
+      name: "Clara Harmonson",
       title: "Software Engineer",
       link: "",
       bio: "Clara stumbled into coding out of the need to create a website for her family business; which lead her to complete Nucamp's full stack bootcamp.  She is currently working as a Product Learning Specialist for Amplify and as a free lance web developer. When she's not at the computer trying to center a div or learning more JavaScript, she's drawing or cooking.",
@@ -13,7 +13,7 @@ const MeetTeam = () => {
       image: "../images/members/pic-holder.png",
     },
     {
-      name: "Marilyn",
+      name: "Marilyn Marquez",
       title: "Software Engineer",
       link: "",
       bio: "Marilyn's journey in coding began with a community college course on HTML that slowly became an obsession. After years of working in education and playing around with HTML, CSS, and JavaScript she enrolled in a coding Bootcamp and became fell in love with Python programming. She is now working as a Full Stack Software Engineer at Webster University.",
@@ -21,7 +21,7 @@ const MeetTeam = () => {
       image: "../images/members/pic-holder.png",
     },
     {
-      name: "Carla",
+      name: "Carla Montano",
       title: "Software Engineer",
       link: "",
       bio: "Carla's journey into programming began by the need of a career change. What starter with a mini tutorial scaled up into a bootcamp and a career change story from a teacher to now a software engineer at Green Mountain Technology, enjoying the process of continuous development and the awesome developer community and friends around",
@@ -29,7 +29,7 @@ const MeetTeam = () => {
       image: "../images/members/pic-carla.png",
     },
     {
-      name: "Allison",
+      name: "Allison Pistolessi",
       title: "Software Engineer",
       link: "",
       bio: "Allison stumbled into coding out of the need of career change; which lead her to complete Nucamp's full stack bootcamp.  She is currently working as a Software Engineer for JP Morgan & Chase.",
@@ -37,7 +37,7 @@ const MeetTeam = () => {
       image: "../images/members/pic-allie.png",
     },
     {
-      name: "Michael",
+      name: "Michael Rivera",
       title: "Software Engineer",
       link: "",
       bio: "Michael stumbled into coding out of the need to create a website for her family business; which lead him to complete Nucamp's full stack bootcamp.  He is currently working as a Backend developer and as a free lance web developer.",

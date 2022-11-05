@@ -287,6 +287,12 @@ footer .socialIcon:hover {
   background-color: transparent !important;
   border: none !important;
 }
+.teamCard h4 {
+  background-color: transparent !important;
+  border: none !important;
+  font-weight: bold;
+}
+
 /* .team-img {
   height: 350px;
 } */
