@@ -34,7 +34,7 @@ const MeetTeam = () => {
       link: "",
       bio: "Allison stumbled into coding out of the need of career change; which lead her to complete Nucamp's full stack bootcamp.  She is currently working as a Software Engineer for JP Morgan & Chase.",
       portfolio: "/",
-      image: "../images/members/pic-holder.png",
+      image: "../images/members/pic-allie.png",
     },
     {
       name: "Michael",
