@@ -44,14 +44,6 @@ const MeetTeam = () => {
       portfolio: "/",
       image: "../images/members/pic-holder.png",
     },
-    // {
-    //   name: "Zaida",
-    //   title: "Software Engineer",
-    //   link: "",
-    //   bio: "soy un...",
-    //   portfolio: "",
-    //   image: "../images/members/pic-holder.png",
-    // },
   ];
   return (
     <Container className="meet-team">
