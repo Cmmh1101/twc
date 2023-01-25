@@ -6,6 +6,7 @@ import MainHeader from "../../../utils/MainHeader";
 
 const Resources = () => {
   const { englishMode } = useTheme();
+
   return (
     <section className="resources-box py-5">
       <Container>
