@@ -2,25 +2,7 @@ import React, { useEffect, useState } from "react";
 import ResourcesHero from "./components/ResourcesHero";
 import ResourcesNav from "./components/ResourcesNav";
 import { getResources } from "../../api/baseApiCalls";
-
-interface Resource {
-  resources: Resources[];
-}
-interface Resources {
-  books: ResourceData[];
-  courses: ResourceData[];
-  tutorials: ResourceData[];
-  podcasts: ResourceData[];
-  websites: ResourceData[];
-}
-interface ResourceData {
-  title?: string;
-  url?: string;
-  description?: string;
-  tag?: string;
-  category?: string;
-  author?: string;
-}
+import { Resource } from "../../interfaces/resources";
 
 const ResourcesPage = () => {
   const [resourcesData, setResourcesData] = useState<Resource[]>();
@@ -39,7 +21,7 @@ const ResourcesPage = () => {
   return (
     <>
       <ResourcesHero />
-      <ResourcesNav />
+      <ResourcesNav resourcesData={resourcesData} />
     </>
   );
 };
