@@ -6,22 +6,22 @@ import { Resource } from "../../interfaces/resources";
 
 const ResourcesPage = () => {
   const [resourcesData, setResourcesData] = useState<Resource[]>();
+  const [resources, setResources] = useState<Resource[]>();
 
   useEffect(() => {
     const getResourcesData = async () => {
       const result: Resource[] = await getResources();
       setResourcesData(result);
-      console.log({ result });
+      const items = result.map((item) => item);
+      setResources(items);
     };
     getResourcesData();
   }, []);
 
-  console.log(resourcesData, "resource state");
-
   return (
     <>
       <ResourcesHero />
-      <ResourcesNav resourcesData={resourcesData} />
+      <ResourcesNav resourcesData={resources!} />
     </>
   );
 };

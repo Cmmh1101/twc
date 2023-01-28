@@ -1,47 +1,72 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
-import ResourcesData from "../ResourcesData";
+// import ResourcesData from "../ResourcesData";
 import { Resource } from "../../../interfaces/resources";
 
 interface Props {
-  resourcesData: Resource[] | undefined;
+  resourcesData: Resource[];
 }
 
 const ResourcesNav = ({ resourcesData }: Props) => {
-  const [activeTab, setActiveTab] = useState("0");
-  //   const [resourceData, setResourceTab] = useState(ResourcesData[0]);
+  const [activeTab, setActiveTab] = useState<string>("0");
+  // const [resourceData, setResourceTab] = useState(resourcesData[0]);
+  const [resourseItem, setResourceItem] = useState<Resource>();
+  //   const [resourse, setResource] = useState<Resource>();
 
-  console.log(resourcesData, "FROM NAV");
+  const data = resourcesData;
+  const resources: any = [];
+  for (const key in data) {
+    // console.log("resources");
+    resources.push({
+      id: key,
+      ...data[key],
+    });
+  }
+  //   console.log(resources, "RES");
+  //   console.log(resourcesData, "FROM NAV");
+
+  const [resourceTab, setResourceTab] = useState(resources[0]);
+  const [resourceData, setResourceData] = useState([]);
+
+  //   useEffect(() => {
+  //     console.log(Object.values(resourceTab), "values");
+  //     const newData: any = Object.values(resourceTab);
+  //     setResourceData(newData);
+  //   }, [resourceTab]);
 
   return (
     <div>
       <Nav tabs justified pills className="flex-colum flex-md-row">
-        {ResourcesData.map((data) => (
-          <NavItem>
-            {/* <NavLink
-              className={
-                activeTab === ResourcesData.indexOf(data).toString()
-                  ? "active"
-                  : ""
-              }
-              onClick={() => {
-                {
-                  const id = ResourcesData.indexOf(data).toString();
-                  setActiveTab(id);
+        {resources?.map((resourceItem: any, i: any) => {
+          //   console.log(resourceItem);
+          //   console.log(resources[0]);
+          return (
+            <NavItem key={i}>
+              <NavLink
+                className={
+                  activeTab === resources.indexOf(resourceItem).toString()
+                    ? "active"
+                    : ""
                 }
-                setResourceTab(data);
-              }}
-            >
-              {data.titleEnglish}
-            </NavLink> */}
-          </NavItem>
-        ))}
+                onClick={() => {
+                  {
+                    const id = resources.indexOf(resourceItem).toString();
+                    setActiveTab(id);
+                  }
+                  setResourceTab(resourceItem);
+                }}
+              >
+                {resourceItem.id}
+              </NavLink>
+            </NavItem>
+          );
+        })}
       </Nav>
 
       <TabContent activeTab={activeTab}>
         <TabPane tabId={activeTab.toString()}>
-          <ResourceDescription {...resourcesData} />
+          <ResourceDescription {...resourceTab} />
         </TabPane>
       </TabContent>
     </div>

@@ -203,16 +203,13 @@ nav .nav-links:focus {
   transform: scale(1.2);
 }
 
-/*Resources*/
+/* Resources */
 
 .resources-box {
-  /* background-color: var(--dark-color); */
-  /* color: var(--white); */
-  height: auto;
-}
-
-.resources-box .intro-img {
-  max-height: 300px;
+  width: 30%;
+  min-height: 300px;
+  margin: 8px;
+  color: var(--dark-color);
 }
 
 .resources-box .intro-img img {
