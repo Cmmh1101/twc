@@ -207,13 +207,20 @@ nav .nav-links:focus {
 
 .resources-box {
   width: 30%;
-  min-height: 300px;
+  min-height: 400px;
   margin: 8px;
   color: var(--dark-color);
 }
 
-.resources-box .intro-img img {
-  max-height: 300px;
+.resource-tag {
+  width: auto !important;
+}
+.resource-tag {
+  width: 55px !important;
+  background-color: #a9b7ff;
+  padding: 2px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .resources-button {

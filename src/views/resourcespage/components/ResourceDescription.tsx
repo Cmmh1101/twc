@@ -13,6 +13,8 @@ import {
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 import { ResourceData, Resources } from "../../../interfaces/resources";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDollar } from "@fortawesome/free-solid-svg-icons";
 
 function ResourceDescription({ ...resourceTab }) {
   const [newResource, setNewResource] = useState();
@@ -54,11 +56,29 @@ function ResourceDescription({ ...resourceTab }) {
               if (item.title || item.url) {
                 return (
                   <Card key={i} className="resources-box p-3 my-2 shadow">
-                    <h4>{item.title}</h4>
-                    {item.description && (
-                      <p>{item.description.substring(0, 100)}</p>
+                    <h4 className="mb-0">{item.title}</h4>
+                    {item.author !== "" && (
+                      <p className="text-primary mt-2 mb-0">By {item.author}</p>
                     )}
-                    <a href={item.url}>{item.url.substring(0, 60)}...</a>
+                    <hr className="my-2" />
+                    {item.description && (
+                      <p>{item.description.substring(0, 120)}</p>
+                    )}
+                    <dl className="d-flex text-capitalize">
+                      <dt>Category:</dt>
+                      <dd className="ml-2">{item.category}</dd>
+                    </dl>
+                    <div className="resource-tag mb-3">
+                      {item.tag === "paid" ? (
+                        <>
+                          <FontAwesomeIcon icon={faDollar} />
+                          <FontAwesomeIcon icon={faDollar} />
+                        </>
+                      ) : (
+                        item.tag === "free" && "Free"
+                      )}
+                    </div>
+                    <a href={item.url}>Go to resource page</a>
                   </Card>
                 );
               }
