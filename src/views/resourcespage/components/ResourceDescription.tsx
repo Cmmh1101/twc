@@ -1,15 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Button,
-  Col,
-  Container,
-  Row,
-  Card,
-  CardGroup,
-  CardImg,
-  CardBody,
-  CardSubtitle,
-} from "reactstrap";
+import { Col, Container, Row, Card } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 import { ResourceData, Resources } from "../../../interfaces/resources";
@@ -17,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollar } from "@fortawesome/free-solid-svg-icons";
 
 function ResourceDescription({ ...resourceTab }) {
-  const [newResource, setNewResource] = useState();
+    const [newResource, setNewResource] = useState();
 
   //   console.log(Object.values(resourceTab), "values");
   //   const data = resourceData;
@@ -68,16 +58,19 @@ function ResourceDescription({ ...resourceTab }) {
                       <dt>Category:</dt>
                       <dd className="ml-2">{item.category}</dd>
                     </dl>
-                    <div className="resource-tag mb-3">
-                      {item.tag === "paid" ? (
-                        <>
-                          <FontAwesomeIcon icon={faDollar} />
-                          <FontAwesomeIcon icon={faDollar} />
-                        </>
-                      ) : (
-                        item.tag === "free" && "Free"
-                      )}
-                    </div>
+                    {item.tag !== "" && (
+                      <div className="resource-tag mb-3">
+                        {item.tag === "paid" ? (
+                          <>
+                            <FontAwesomeIcon icon={faDollar} />
+                            <FontAwesomeIcon icon={faDollar} />
+                          </>
+                        ) : (
+                          item.tag === "free" && "Free"
+                        )}
+                      </div>
+                    )}
+
                     <a href={item.url}>Go to resource page</a>
                   </Card>
                 );
