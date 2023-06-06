@@ -40,7 +40,7 @@ function ResourceDescription({ ...resourceTab }) {
             className="d-flex align-items-center justify-content-center flex-wrap"
           >
             {flatData.map((item: any, i: any) => {
-              if (item.title || item.url) {
+              // if (item.title || item.url) {
                 return (
                   <Card key={i} className="resources-box col-12 col-md-5 col-lg-5 p-3 my-2 shadow">
                     <h4 className="mb-0">{item.title}</h4>
@@ -71,7 +71,7 @@ function ResourceDescription({ ...resourceTab }) {
                     <a href={item.url}>Go to resource page</a>
                   </Card>
                 );
-              }
+              // }
             })}
           </Col>
           <Row>
