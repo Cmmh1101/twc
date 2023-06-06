@@ -9,7 +9,7 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import ToggleLangButton from "./ToggleLangButton";
+// import ToggleLangButton from "./ToggleLangButton";
 import ToggleModeButton from "./ToggleModeButton";
 
 const TopNavbar = () => {
@@ -20,8 +20,8 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar tag="nav" fixed="top" className="navbar shadow" dark expand="md">
-      <Container fluid style={{ padding: "0 10%" }}>
+    <Navbar tag="nav" fixed="top" className="navbar shadow p-0" dark expand="md">
+      <Container className="p-0">
         <NavbarBrand className="mr-auto" href="/">
           <img
             src="/logo.png"
@@ -38,14 +38,14 @@ const TopNavbar = () => {
               <NavItem className="my-auto">
                 <ToggleModeButton />
               </NavItem>
-              <NavItem className="my-auto">
+              {/* <NavItem className="my-auto">
                 <ToggleLangButton />
-              </NavItem>
+              </NavItem> */}
             </div>
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/"
               >
@@ -56,7 +56,7 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/techPaths"
               >
@@ -66,7 +66,7 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/resources"
               >
@@ -76,7 +76,7 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/blog"
               >
@@ -86,7 +86,7 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/fqa"
               >
@@ -96,7 +96,7 @@ const TopNavbar = () => {
             <NavItem className="px-3">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "nav-links"
+                  isActive ? "activePath" : "nav-links"
                 }
                 to="/contact"
               >
