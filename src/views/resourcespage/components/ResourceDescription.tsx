@@ -28,7 +28,6 @@ function ResourceDescription({ ...resourceTab }) {
   console.log(flatData, "obj");
 
   return (
-    <section className="py-5">
       <Container className="mb-5" id="twc-intro">
         <Row>
           <Col xs={12}>
@@ -45,7 +44,7 @@ function ResourceDescription({ ...resourceTab }) {
             {flatData.map((item: any, i: any) => {
               if (item.title || item.url) {
                 return (
-                  <Card key={i} className="resources-box p-3 my-2 shadow">
+                  <Card key={i} className="resources-box col-12 col-md-5 col-lg-5 p-3 my-2 shadow">
                     <h4 className="mb-0">{item.title}</h4>
                     {item.author !== "" && (
                       <p className="text-primary mt-2 mb-0">By {item.author}</p>
@@ -195,7 +194,6 @@ function ResourceDescription({ ...resourceTab }) {
           </Container>
         </Row> */}
       </Container>
-    </section>
   );
 }
 
