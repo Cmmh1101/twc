@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import ResourceDescription from "../components/ResourceDescription";
 // import ResourcesData from "../ResourcesData";
@@ -11,7 +11,7 @@ interface Props {
 const ResourcesNav = ({ resourcesData }: Props) => {
   const [activeTab, setActiveTab] = useState<string>("0");
   // const [resourceData, setResourceTab] = useState(resourcesData[0]);
-  const [resourseItem, setResourceItem] = useState<Resource>();
+  // const [resourseItem, setResourceItem] = useState<Resource>();
   //   const [resourse, setResource] = useState<Resource>();
 
   const data = resourcesData;
@@ -27,7 +27,7 @@ const ResourcesNav = ({ resourcesData }: Props) => {
   //   console.log(resourcesData, "FROM NAV");
 
   const [resourceTab, setResourceTab] = useState(resources[0]);
-  const [resourceData, setResourceData] = useState([]);
+  // const [resourceData, setResourceData] = useState([]);
 
   //   useEffect(() => {
   //     console.log(Object.values(resourceTab), "values");
