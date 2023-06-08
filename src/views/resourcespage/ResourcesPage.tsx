@@ -1,28 +1,14 @@
-import { useEffect, useState } from "react";
 import ResourcesHero from "./components/ResourcesHero";
 import ResourcesNav from "./components/ResourcesNav";
-import { getResources } from "../../api/baseApiCalls";
-import { Resource } from "../../interfaces/resources";
+import { ResourcesProvider } from "../../provider/ResourcesProvider";
 
 const ResourcesPage = () => {
-  // const [resourcesData, setResourcesData] = useState<Resource[]>();
-  const [resources, setResources] = useState<Resource[]>();
-
-  useEffect(() => {
-    const getResourcesData = async () => {
-      const result: Resource[] = await getResources();
-      setResources(result);
-      const items = result.map((item) =>{ return (item)});
-      setResources(items);
-    };
-    getResourcesData();
-  }, []);
-
+  
   return (
-    <>
+    <ResourcesProvider>
       <ResourcesHero />
-      <ResourcesNav resourcesData={resources!} />
-    </>
+      <ResourcesNav />
+    </ResourcesProvider>
   );
 };
 
