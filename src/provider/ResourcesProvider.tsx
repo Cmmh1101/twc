@@ -14,7 +14,6 @@ function useResources() {
 const ResourcesProvider: React.FC = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(false)
   const [resources, setResources] = useState<Resource[]>();
-  const [activeTab, setActiveTab] = useState<string>("0");
   const [resourceTab, setResourceTab] = useState<Resource[]>([]);
 
   const getResourcesData = async () => {
