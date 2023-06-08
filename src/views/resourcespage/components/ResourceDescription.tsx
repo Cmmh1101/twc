@@ -2,10 +2,17 @@ import { Col, Container, Row, Card } from "reactstrap";
 import MainHeader from "../../../utils/MainHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollar } from "@fortawesome/free-solid-svg-icons";
+import { useResources } from "../../../provider/ResourcesProvider";
+import LoadingComponent from "../../../utils/LoadingComponent";
 
 const ResourceDescription = ({ ...resourceTab }) => {
+  const {loading} = useResources()
 
   const flatData: any = Object.values(resourceTab);
+
+  if (loading) {
+    return <LoadingComponent />
+  }
 
   return (
       <Container className="mb-5" id="twc-intro">

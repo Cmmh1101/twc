@@ -6,11 +6,8 @@ import { useResources } from "../../../provider/ResourcesProvider";
 const ResourcesNav = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
-  const { resourcesData, resourceTab, setResourceTab, loading } = useResources()
+  const { resourcesData, resourceTab, setResourceTab } = useResources()
   
-  if (loading) {
-    return <div>Loading...</div>
-  }
 
   return (
     <div>
