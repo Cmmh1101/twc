@@ -6,7 +6,6 @@ export const getResources = async () => {
   const data = await response.json();
   const resources = [];
   for (const key in data) {
-    // console.log("resources");
     resources.push({
       id: key,
       ...data[key],
@@ -23,7 +22,6 @@ export const getAllPost = async () => {
   const data = await response.json();
   const posts = [];
   for (const key in data) {
-    // console.log("posts");
     posts.push({
       id: key,
       ...data[key],
