@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import RoleDescription from "../components/RoleDescription";
 import TechPathsData from "../TechPathsData";
+import { usePaths } from "../../../provider/PathsProvider";
 
 const TechPathsNav = () => {
   const [activeTab, setActiveTab] = useState("0");
   const [techPath, setTechPath] = useState(TechPathsData[0]);
 
+  const { pathData, paths } = usePaths()
+  console.log({ paths })
+  console.log({pathData})
+
   return (
     <div>
-      <Nav tabs justified pills className="flex-column flex-md-row">
+      <Nav pills className="d-flex justify-content-around flex-colum flex-md-row border-top pt-4">
         {TechPathsData.map((data, i) => (
           <NavItem key={i}>
             <NavLink

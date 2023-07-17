@@ -24,7 +24,9 @@ hr.solid {
   color: azure;
 }
 .innerHero {
-  height: 60vh;
+  height: 50vh;
+  padding-bottom: 0!important;
+  margin-bottom: 0!important;
 }
 
 .display-3 {

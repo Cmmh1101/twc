@@ -29,3 +29,19 @@ export const getAllPost = async () => {
   }
   return posts;
 };
+
+export const getPaths = async () => {
+  const response = await fetch(
+    "https://teachers-who-code-default-rtdb.firebaseio.com/paths.json"
+  );
+
+  const data = await response.json();
+  const paths = [];
+  for (const key in data) {
+    paths.push({
+      id: key,
+      ...data[key],
+    });
+  }
+  return paths;
+};
