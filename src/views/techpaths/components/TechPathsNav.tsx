@@ -8,9 +8,8 @@ const TechPathsNav = () => {
   const [activeTab, setActiveTab] = useState("0");
   const [techPath, setTechPath] = useState(TechPathsData[0]);
 
-  const { pathData, paths } = usePaths()
-  console.log({ paths })
-  console.log({pathData})
+  const { pathData } = usePaths()
+  console.log({ pathData })
 
   return (
     <div>

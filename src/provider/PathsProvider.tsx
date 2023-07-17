@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import { Resource } from "../interfaces/resources";
 import { getPaths } from "../api/baseApiCalls";
 import { PathsContext } from "./PathsContext";
 import { Paths } from "../interfaces/paths";
@@ -26,11 +25,6 @@ const PathsProvider: React.FC = ({ children }) => {
     setPaths(items);
     setLoading(false)
   };
-
-  console.log({paths})
-
-//   const resourcesData: any = [];
-
   for (const key in paths!) {
     pathData.push({
       id: key,
@@ -39,11 +33,12 @@ const PathsProvider: React.FC = ({ children }) => {
   }
   
   useEffect(() => {
+    
     getPathData();
+    
   }, []);
 
   useEffect(() => {
-    
     setPathTab(pathData[0])
   }, [paths]);
 
