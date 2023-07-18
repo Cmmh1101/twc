@@ -33,13 +33,13 @@ const PathsProvider: React.FC = ({ children }) => {
   }
   
   useEffect(() => {
-    
     getPathData();
-    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setPathTab(pathData[0])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [paths]);
 
   return (
