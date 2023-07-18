@@ -11,10 +11,7 @@ const IntroTWC = (props: Props) => {
     <Container className="mb-5" id="twc-intro">
       <Row>
         <MainHeader
-          headerText={
-            englishMode
-              ? "Que es Teachers Who Code"
-              : "What is Teachers Who Code"
+          headerText={"What is Teachers Who Code"
           }
         />
         <Col

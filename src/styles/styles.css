@@ -24,7 +24,9 @@ hr.solid {
   color: azure;
 }
 .innerHero {
-  height: 60vh;
+  height: 50vh;
+  padding-bottom: 0!important;
+  margin-bottom: 0!important;
 }
 
 .display-3 {
@@ -166,8 +168,11 @@ hr.solid {
 /* intro section */
 
 .intro-img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
+  max-width: 500px;
+  height: 500px;
 }
 
 .intro-img img {
@@ -216,7 +221,6 @@ hr.solid {
   width: 100%;
   min-height: 400px;
   margin: 8px;
-  color: var(--dark-color);
 }
 
 .resource-tag {
@@ -232,7 +236,20 @@ hr.solid {
 
 .resources-button {
   background: linear-gradient(178.23deg, #3b59f9 1.5%, #a9b7ff 128.18%);
-  border-radius: 30px;
+  border-radius: 50px;
+  color: var(--white);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+.resources-button:hover {
+  text-decoration: none;
+  color: var(--white);
+  transform: scale(1.05)!important;
+  box-shadow: 0px 2.5px 2.5px #a2bae1;
+}
+
+.resource-description {
+  color: var(--dark-color);
 }
 
 /* footer*/

@@ -7,11 +7,10 @@ const ResourcesNav = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const { resourcesData, resourceTab, setResourceTab } = useResources()
-  
 
   return (
     <div>
-      <Nav tabs justified pills className="flex-colum flex-md-row">
+      <Nav pills className="d-flex justify-content-around flex-colum flex-md-row border-top pt-4">
         {resourcesData?.map((resourceItem: any, i: number) => {
           return (
             <NavItem key={i}>

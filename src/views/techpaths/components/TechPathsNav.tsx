@@ -1,39 +1,38 @@
 import React, { useState } from "react";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import RoleDescription from "../components/RoleDescription";
-import TechPathsData from "../TechPathsData";
+import { usePaths } from "../../../provider/PathsProvider";
 
 const TechPathsNav = () => {
-  const [activeTab, setActiveTab] = useState("0");
-  const [techPath, setTechPath] = useState(TechPathsData[0]);
+  const [activeTab, setActiveTab] = useState<number>(0);
+
+  const { pathData, pathTab, setPathTab } = usePaths()
+  console.log({ pathData })
 
   return (
     <div>
-      <Nav tabs justified pills className="flex-column flex-md-row">
-        {TechPathsData.map((data, i) => (
+      <Nav pills className="d-flex justify-content-around flex-colum flex-md-row border-top pt-4">
+        {pathData?.map((path: any, i: number) => (
           <NavItem key={i}>
             <NavLink
               className={
-                activeTab === TechPathsData.indexOf(data).toString()
+                activeTab === pathData.indexOf(path)
                   ? "active"
                   : ""
               }
               onClick={() => {
-                {
-                  const id = TechPathsData.indexOf(data).toString();
-                  setActiveTab(id);
-                }
-                setTechPath(data);
+                setActiveTab(i);
+                setPathTab(path);
               }}
             >
-              {data.titleEnglish}
+              {path?.id}
             </NavLink>
           </NavItem>
         ))}
       </Nav>
       <TabContent activeTab={activeTab}>
-        <TabPane tabId={activeTab.toString()}>
-          <RoleDescription {...techPath} />
+        <TabPane tabId={activeTab}>
+          <RoleDescription {...pathTab} />
         </TabPane>
       </TabContent>
     </div>
@@ -41,72 +40,3 @@ const TechPathsNav = () => {
 };
 
 export default TechPathsNav;
-
-// return (
-//     <div>
-//         <Nav
-//             tabs
-//             justified
-//             pills
-//             className="flex-column flex-md-row"
-//         >
-//             <NavItem>
-//                 <NavLink className={activeTab === '0' ? 'active' : ''} onClick={() => {
-//                     setActiveTab('0')
-//                     setTechPath(TechPathsData[0])
-//                 }}>
-//                     {techPath.titleEnglish}
-//                 </NavLink>
-//             </NavItem>
-//             <NavItem>
-//                 <NavLink className={activeTab === '1' ? 'active' : ''} onClick={() => {
-//                     setActiveTab('1')
-//                     setTechPath(TechPathsData[1])
-//                 }} >
-//                     Path 2
-//                 </NavLink>
-//             </NavItem>
-//             <NavItem>
-//                 <NavLink className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
-//                     Path 3
-//                 </NavLink>
-//             </NavItem>
-//             <NavItem>
-//                 <NavLink className={activeTab === '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
-//                     Path 4
-//                 </NavLink>
-//             </NavItem>
-//             <NavItem>
-//                 <NavLink className={activeTab === '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
-//                     Path 5
-//                 </NavLink>
-//             </NavItem>
-//             <NavItem>
-//                 <NavLink className={activeTab === '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
-//                     Path 6
-//                 </NavLink>
-//             </NavItem>
-//         </Nav>
-//         <TabContent activeTab={activeTab}>
-//             <TabPane tabId="0">
-//                 <RoleDescription {...techPath} />
-//             </TabPane>
-//             <TabPane tabId="1">
-//                 <RoleDescription {...techPath} />
-//             </TabPane>
-//             <TabPane tabId="3">
-//                 <RoleDescription />
-//             </TabPane>
-//             <TabPane tabId="4">
-//                 <RoleDescription />
-//             </TabPane>
-//             <TabPane tabId="5">
-//                 <RoleDescription />
-//             </TabPane>
-//             <TabPane tabId="6">
-//                 <RoleDescription />
-//             </TabPane>
-//         </TabContent>
-//     </div >
-// );
-// }

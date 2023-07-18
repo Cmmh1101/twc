@@ -15,16 +15,6 @@ const ResourcesProvider: React.FC = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(false)
   const [resources, setResources] = useState<Resource[]>();
   const [resourceTab, setResourceTab] = useState<Resource[]>([]);
-
-  const getResourcesData = async () => {
-    setLoading(true)
-    const result: Resource[] = await getResources();
-    setResources(result);
-    const items = result.map((item) =>(item));
-    setResources(items);
-    setLoading(false)
-  };
-
   const resourcesData: any = [];
 
   for (const key in resources!) {
@@ -35,11 +25,19 @@ const ResourcesProvider: React.FC = ({ children }) => {
   }
   
   useEffect(() => {
+    const getResourcesData = async () => {
+      setLoading(true)
+      const result: Resource[] = await getResources();
+      setResources(result);
+      const items = result.map((item) =>(item));
+      setResources(items);
+      setLoading(false)
+    };
     getResourcesData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    
     setResourceTab(resourcesData[0])
   }, [resources]);
 
