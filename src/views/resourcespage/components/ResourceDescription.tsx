@@ -15,7 +15,7 @@ const ResourceDescription = ({ ...resourceTab }) => {
   }
 
   return (
-      <Container className="mb-5" id="twc-intro">
+      <Container className="resource-description mb-5" id="twc-intro">
         <Row>
           <Col xs={12}>
             <MainHeader

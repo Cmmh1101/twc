@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
-import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
 const Resources = () => {
-  const { englishMode } = useTheme();
 
   return (
     <section className="resources-box py-5">
       <Container>
         <Row>
-          <MainHeader headerText={englishMode ? "Recursos" : "Resources"} />
+          <MainHeader headerText={"Resources"} />
           <Col
             xs={12}
             className="d-flex align-items-center justify-content-center flex-wrap mb-5"
@@ -29,7 +27,7 @@ const Resources = () => {
               </ul>
               <Link
                 to="/resources"
-                className="resources-button mb-5 mb-md-0 px-3 py-2 text-light"
+                className="resources-button mb-5 mb-md-0 px-3 py-2"
               >
                 Find resources
               </Link>

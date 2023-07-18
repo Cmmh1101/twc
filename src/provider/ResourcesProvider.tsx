@@ -17,15 +17,6 @@ const ResourcesProvider: React.FC = ({ children }) => {
   const [resourceTab, setResourceTab] = useState<Resource[]>([]);
   const resourcesData: any = [];
 
-  // const getResourcesData = async () => {
-  //   setLoading(true)
-  //   const result: Resource[] = await getResources();
-  //   setResources(result);
-  //   const items = result.map((item) =>(item));
-  //   setResources(items);
-  //   setLoading(false)
-  // };
-
   for (const key in resources!) {
     resourcesData.push({
       id: key,

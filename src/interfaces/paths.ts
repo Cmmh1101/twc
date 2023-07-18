@@ -4,7 +4,8 @@ export interface Paths {
 
 export interface PathData {
   description?: string;
-  skill?: string;
+  photo?: string;
+  skills?: string;
   title?: string;
-  technology?: string;
+  technologies?: string;
 }

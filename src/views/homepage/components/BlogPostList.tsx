@@ -75,7 +75,7 @@ const BlogPostList = () => {
           <Col xs={12} className="d-flex justify-content-center my-5">
             <Link
               to="/blog"
-              className="resources-button mb-5 mb-md-0 px-3 py-2 text-light"
+              className="resources-button mb-5 mb-md-0 px-3 py-2"
             >
               Go To All Posts
             </Link>
