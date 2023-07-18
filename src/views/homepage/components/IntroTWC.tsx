@@ -1,12 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import { useTheme } from "../../../provider/ThemeModeProvider";
 import MainHeader from "../../../utils/MainHeader";
 
-interface Props {}
 
-const IntroTWC = (props: Props) => {
-  const { englishMode } = useTheme();
+const IntroTWC = () => {
   return (
     <Container className="mb-5" id="twc-intro">
       <Row>

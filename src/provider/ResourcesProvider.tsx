@@ -39,6 +39,7 @@ const ResourcesProvider: React.FC = ({ children }) => {
 
   useEffect(() => {
     setResourceTab(resourcesData[0])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resources]);
 
   return (
